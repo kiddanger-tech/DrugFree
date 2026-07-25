@@ -1,1 +1,641 @@
+/* ==========================================
+   DRUGFREE QUEST - AUTHENTICATION STYLE
+   Login / Register / Forgot Password
+   ========================================== */
 
+
+
+/* =====================
+   AUTH PAGE LAYOUT
+===================== */
+
+
+.auth-page {
+
+    min-height:
+    100vh;
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #dcfce7,
+        #eff6ff
+    );
+
+    padding:
+    30px;
+
+}
+
+
+
+
+.auth-container {
+
+    width:
+    100%;
+
+    max-width:
+    1100px;
+
+    display:
+    grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    background:
+    white;
+
+    border-radius:
+    25px;
+
+    overflow:
+    hidden;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+
+
+
+
+/* =====================
+   ORION SIDE
+===================== */
+
+
+.auth-orion {
+
+    background:
+    linear-gradient(
+        160deg,
+        #16a34a,
+        #22c55e
+    );
+
+    color:
+    white;
+
+    padding:
+    50px;
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    text-align:
+    center;
+
+}
+
+
+
+.auth-orion img {
+
+    width:
+    220px;
+
+    margin-bottom:
+    25px;
+
+    animation:
+    float 4s infinite;
+
+}
+
+
+
+.auth-orion h1 {
+
+    font-size:
+    2.3rem;
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.auth-orion p {
+
+    opacity:
+    0.95;
+
+}
+
+
+
+
+
+/* =====================
+   FORM AREA
+===================== */
+
+
+.auth-form {
+
+    padding:
+    50px;
+
+}
+
+
+
+.auth-form h2 {
+
+    text-align:
+    center;
+
+    font-size:
+    2rem;
+
+    color:
+    var(--dark);
+
+    margin-bottom:
+    10px;
+
+}
+
+
+
+.auth-form .subtitle {
+
+    text-align:
+    center;
+
+    color:
+    var(--muted);
+
+    margin-bottom:
+    35px;
+
+}
+
+
+
+
+
+/* =====================
+   INPUT GROUP
+===================== */
+
+
+.input-group {
+
+    margin-bottom:
+    20px;
+
+}
+
+
+
+.input-group label {
+
+    display:
+    block;
+
+    margin-bottom:
+    8px;
+
+    font-weight:
+    600;
+
+}
+
+
+
+.input-group input {
+
+    width:
+    100%;
+
+    padding:
+    15px;
+
+    border:
+    2px solid #e2e8f0;
+
+    border-radius:
+    12px;
+
+    font-size:
+    1rem;
+
+    outline:
+    none;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.input-group input:focus {
+
+    border-color:
+    var(--primary);
+
+    box-shadow:
+    0 0 0 4px rgba(34,197,94,0.15);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   AUTH BUTTON
+===================== */
+
+
+.auth-btn {
+
+    width:
+    100%;
+
+    padding:
+    15px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    border-radius:
+    12px;
+
+    font-size:
+    1rem;
+
+    font-weight:
+    700;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.auth-btn:hover {
+
+    background:
+    var(--primary-dark);
+
+    transform:
+    translateY(-2px);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   REMEMBER / OPTIONS
+===================== */
+
+
+.auth-options {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    margin:
+    15px 0;
+
+    font-size:
+    0.9rem;
+
+}
+
+
+
+.auth-options a {
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    600;
+
+}
+
+
+
+
+
+/* =====================
+   DIVIDER
+===================== */
+
+
+.divider {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    15px;
+
+    margin:
+    25px 0;
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.divider::before,
+.divider::after {
+
+    content:
+    "";
+
+    flex:
+    1;
+
+    height:
+    1px;
+
+    background:
+    #e2e8f0;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   GOOGLE LOGIN
+===================== */
+
+
+.social-login {
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    gap:
+    15px;
+
+}
+
+
+
+.social-btn {
+
+    width:
+    100%;
+
+    padding:
+    14px;
+
+    border-radius:
+    12px;
+
+    background:
+    white;
+
+    border:
+    2px solid #e2e8f0;
+
+    font-weight:
+    600;
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    gap:
+    10px;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.social-btn:hover {
+
+    border-color:
+    var(--primary);
+
+}
+
+
+
+
+
+
+/* =====================
+   AUTH FOOTER
+===================== */
+
+
+.auth-footer {
+
+    text-align:
+    center;
+
+    margin-top:
+    25px;
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.auth-footer a {
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    700;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   GUEST MODE BUTTON
+===================== */
+
+
+.guest-btn {
+
+    margin-top:
+    15px;
+
+    width:
+    100%;
+
+    padding:
+    15px;
+
+    border-radius:
+    12px;
+
+    background:
+    #f1f5f9;
+
+    color:
+    var(--dark);
+
+    font-weight:
+    700;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.guest-btn:hover {
+
+    background:
+    #e2e8f0;
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+   PASSWORD RESET BOX
+===================== */
+
+
+.reset-info {
+
+    background:
+    #f0fdf4;
+
+    border-left:
+    5px solid var(--primary);
+
+    padding:
+    15px;
+
+    border-radius:
+    10px;
+
+    margin-bottom:
+    25px;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:850px){
+
+
+.auth-container {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.auth-orion {
+
+    padding:
+    35px;
+
+}
+
+
+
+.auth-form {
+
+    padding:
+    35px;
+
+}
+
+
+
+.auth-orion img {
+
+    width:
+    160px;
+
+}
+
+
+}
