@@ -1,1 +1,471 @@
+/* ==========================================
+   DRUGFREE QUEST
+   ACHIEVEMENT PAGE DESIGN
+   ========================================== */
 
+
+/* =========================
+   INTRO
+========================= */
+
+
+.achievement-intro {
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    text-align:center;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 10px 25px
+
+    rgba(0,0,0,.08);
+
+}
+
+
+
+.achievement-intro h2 {
+
+    color:#7c3aed;
+
+    font-size:32px;
+
+}
+
+
+
+.achievement-intro p {
+
+    color:#475569;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   ORION MESSAGE
+========================= */
+
+
+.orion-card {
+
+
+    max-width:700px;
+
+
+    margin:25px auto;
+
+
+    padding:25px;
+
+
+    background:#f5f3ff;
+
+
+    border-radius:25px;
+
+
+    border-left:
+
+    6px solid #7c3aed;
+
+
+}
+
+
+
+#orionMessage {
+
+
+    color:#5b21b6;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   ACHIEVEMENT AREA
+========================= */
+
+
+.achievement-area {
+
+
+    max-width:1000px;
+
+
+    margin:30px auto;
+
+
+    padding:25px;
+
+
+}
+
+
+
+.achievement-area h2 {
+
+
+    text-align:center;
+
+
+    color:#1e293b;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   BADGE GRID
+========================= */
+
+
+#achievementContainer {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+
+    repeat(
+
+    3,
+
+    1fr
+
+    );
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   BADGE CARD
+========================= */
+
+
+.badge-card {
+
+
+    padding:25px;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+
+    0 8px 20px
+
+    rgba(0,0,0,.08);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.badge-card:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+}
+
+
+
+
+.badge-card h3 {
+
+
+    color:#eab308;
+
+
+}
+
+
+
+.badge-card p {
+
+
+    color:#475569;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   UNLOCKED BADGE
+========================= */
+
+
+.badge-unlocked {
+
+
+    border:
+
+    3px solid #22c55e;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #f0fdf4,
+
+        #ffffff
+
+    );
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   LOCKED BADGE
+========================= */
+
+
+.badge-locked {
+
+
+    opacity:.5;
+
+
+    filter:grayscale(1);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+
+.progress-achievements {
+
+
+    max-width:800px;
+
+
+    margin:30px auto;
+
+
+    padding:30px;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+
+    0 8px 20px
+
+    rgba(0,0,0,.08);
+
+
+}
+
+
+
+.progress-achievements h2 {
+
+
+    color:#2563eb;
+
+
+}
+
+
+
+.progress-bar {
+
+
+    width:100%;
+
+
+    height:25px;
+
+
+    background:#e2e8f0;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+#achievementProgress {
+
+
+    height:100%;
+
+
+    width:0%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #22c55e,
+
+        #16a34a
+
+    );
+
+
+    transition:
+
+    width 1s ease;
+
+
+}
+
+
+
+#progressText {
+
+
+    margin-top:15px;
+
+
+    font-weight:bold;
+
+
+    color:#334155;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+#achievementContainer {
+
+
+    grid-template-columns:
+
+
+    1fr;
+
+
+}
+
+
+
+.achievement-intro {
+
+
+    margin:20px;
+
+
+}
+
+
+
+}
