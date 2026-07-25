@@ -1,1 +1,710 @@
+/* ==========================================
+   DRUGFREE QUEST - DASHBOARD STYLE
+   ========================================== */
 
+
+
+/* =====================
+   DASHBOARD HERO
+===================== */
+
+
+.dashboard-hero {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    gap:
+    40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #dcfce7,
+        #ffffff
+    );
+
+    border-radius:
+    25px;
+
+    margin:
+    30px 5%;
+
+}
+
+
+
+.welcome {
+
+    flex:
+    1;
+
+}
+
+
+
+.welcome h1 {
+
+    font-size:
+    2.5rem;
+
+    color:
+    var(--dark);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.welcome span {
+
+    color:
+    var(--primary-dark);
+
+}
+
+
+
+.welcome p {
+
+    color:
+    var(--muted);
+
+    font-size:
+    1.1rem;
+
+}
+
+
+
+
+
+/* =====================
+   XP BOX
+===================== */
+
+
+.xp-box {
+
+    margin-top:
+    30px;
+
+    background:
+    white;
+
+    padding:
+    25px;
+
+    border-radius:
+    var(--radius);
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.xp-box h3 {
+
+    color:
+    var(--primary-dark);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.xp-box p {
+
+    margin-top:
+    10px;
+
+    font-weight:
+    600;
+
+}
+
+
+
+
+
+/* =====================
+   ORION CARD
+===================== */
+
+
+.orion-box {
+
+    background:
+    white;
+
+    padding:
+    25px;
+
+    border-radius:
+    25px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    20px;
+
+    box-shadow:
+    var(--shadow);
+
+    max-width:
+    350px;
+
+}
+
+
+
+.orion-box img {
+
+    width:
+    120px;
+
+    animation:
+    float 4s infinite;
+
+}
+
+
+
+.orion-box h3 {
+
+    color:
+    var(--primary-dark);
+
+}
+
+
+
+.orion-box p {
+
+    color:
+    var(--muted);
+
+    font-size:
+    0.9rem;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   STAT CARDS
+===================== */
+
+
+.stats {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:
+    25px;
+
+}
+
+
+
+.stat-card {
+
+    text-align:
+    center;
+
+}
+
+
+
+.stat-card i {
+
+    font-size:
+    2rem;
+
+    color:
+    var(--primary);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.stat-card h3 {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.stat-card h1 {
+
+    color:
+    var(--dark);
+
+    font-size:
+    2rem;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   DAILY MISSION
+===================== */
+
+
+.daily-mission {
+
+    margin-top:
+    20px;
+
+}
+
+
+
+.mission-card {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+}
+
+
+
+.mission-card button {
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    padding:
+    12px 25px;
+
+    border-radius:
+    50px;
+
+    font-weight:
+    600;
+
+}
+
+
+
+.mission-card button:hover {
+
+    background:
+    var(--primary-dark);
+
+}
+
+
+
+
+
+/* =====================
+   LEARNING JOURNEY
+===================== */
+
+
+.learning-progress {
+
+    text-align:
+    center;
+
+}
+
+
+
+.path {
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    gap:
+    30px;
+
+    flex-wrap:
+    wrap;
+
+}
+
+
+
+.step {
+
+    width:
+    220px;
+
+    background:
+    white;
+
+    padding:
+    25px;
+
+    border-radius:
+    20px;
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.step span {
+
+    width:
+    50px;
+
+    height:
+    50px;
+
+    border-radius:
+    50%;
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    margin:
+    auto auto 15px;
+
+    font-weight:
+    bold;
+
+}
+
+
+
+.step.completed span {
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+}
+
+
+
+.step.active span {
+
+    background:
+    var(--blue);
+
+    color:
+    white;
+
+}
+
+
+
+.step.locked span {
+
+    background:
+    #e2e8f0;
+
+}
+
+
+
+
+
+/* =====================
+   ACTIVITY LIST
+===================== */
+
+
+.activity-list {
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    gap:
+    15px;
+
+}
+
+
+
+.activity-card {
+
+    background:
+    white;
+
+    padding:
+    20px;
+
+    border-radius:
+    15px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    20px;
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.activity-card i {
+
+    color:
+    var(--primary);
+
+    font-size:
+    1.4rem;
+
+}
+
+
+
+.activity-card span {
+
+    margin-left:
+    auto;
+
+    font-weight:
+    700;
+
+    color:
+    var(--primary-dark);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   QUICK ACTIONS
+===================== */
+
+
+.action-grid {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:
+    20px;
+
+}
+
+
+
+.action-grid a {
+
+    background:
+    white;
+
+    padding:
+    25px;
+
+    border-radius:
+    18px;
+
+    text-align:
+    center;
+
+    box-shadow:
+    var(--shadow);
+
+    font-weight:
+    600;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.action-grid a i {
+
+    display:
+    block;
+
+    font-size:
+    2rem;
+
+    color:
+    var(--primary);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.action-grid a:hover {
+
+    transform:
+    translateY(-8px);
+
+    background:
+    #f0fdf4;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:1000px){
+
+
+.stats {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.action-grid {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.dashboard-hero {
+
+    flex-direction:
+    column;
+
+}
+
+
+
+.orion-box {
+
+    max-width:
+    100%;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.stats {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.action-grid {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.welcome h1 {
+
+    font-size:
+    2rem;
+
+}
+
+
+
+.mission-card {
+
+    flex-direction:
+    column;
+
+    gap:
+    20px;
+
+}
+
+
+}
