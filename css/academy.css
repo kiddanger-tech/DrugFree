@@ -1,1 +1,673 @@
+/* ==========================================
+   DRUGFREE QUEST - ACADEMY STYLE
+   ========================================== */
 
+
+
+/* =====================
+   ACADEMY HERO
+===================== */
+
+
+.academy-hero {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    gap:
+    40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ecfdf5,
+        #eff6ff
+    );
+
+    border-radius:
+    25px;
+
+    margin:
+    30px 5%;
+
+}
+
+
+
+.academy-hero h1 {
+
+    font-size:
+    2.6rem;
+
+    color:
+    var(--dark);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.academy-hero p {
+
+    color:
+    var(--muted);
+
+    max-width:
+    600px;
+
+}
+
+
+
+.academy-hero img {
+
+    width:
+    220px;
+
+    animation:
+    float 4s infinite;
+
+}
+
+
+
+
+
+
+/* =====================
+   COURSE GRID
+===================== */
+
+
+.course-grid {
+
+    display:
+    grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:
+    25px;
+
+}
+
+
+
+
+.course-card {
+
+    position:
+    relative;
+
+    overflow:
+    hidden;
+
+}
+
+
+
+
+.course-card:hover {
+
+    transform:
+    translateY(-8px);
+
+}
+
+
+
+
+
+.course-icon {
+
+    width:
+    70px;
+
+    height:
+    70px;
+
+    border-radius:
+    20px;
+
+    background:
+    #dcfce7;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    font-size:
+    2rem;
+
+    margin-bottom:
+    20px;
+
+}
+
+
+
+
+
+.course-card h3 {
+
+    margin-bottom:
+    10px;
+
+}
+
+
+
+.course-card p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+
+
+.course-meta {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    margin-top:
+    20px;
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    600;
+
+}
+
+
+
+
+
+.course-card button {
+
+    margin-top:
+    20px;
+
+    width:
+    100%;
+
+    padding:
+    12px;
+
+    border-radius:
+    50px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    font-weight:
+    700;
+
+}
+
+
+
+
+
+.course-card button:hover {
+
+    background:
+    var(--primary-dark);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   LEARNING PATH
+===================== */
+
+
+.learning-path {
+
+    max-width:
+    900px;
+
+    margin:
+    auto;
+
+}
+
+
+
+
+.path-item {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    25px;
+
+    margin-bottom:
+    25px;
+
+}
+
+
+
+
+.path-circle {
+
+    width:
+    70px;
+
+    height:
+    70px;
+
+    border-radius:
+    50%;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    font-size:
+    1.5rem;
+
+    font-weight:
+    bold;
+
+    flex-shrink:
+    0;
+
+}
+
+
+
+
+
+.path-completed {
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+}
+
+
+
+.path-current {
+
+    background:
+    var(--blue);
+
+    color:
+    white;
+
+}
+
+
+
+.path-locked {
+
+    background:
+    #e2e8f0;
+
+    color:
+    #64748b;
+
+}
+
+
+
+
+
+.path-content {
+
+    background:
+    white;
+
+    padding:
+    20px;
+
+    border-radius:
+    18px;
+
+    box-shadow:
+    var(--shadow);
+
+    flex:
+    1;
+
+}
+
+
+
+
+
+.path-content h3 {
+
+    margin-bottom:
+    5px;
+
+}
+
+
+
+.path-content p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   LESSON MODULES
+===================== */
+
+
+.lesson-modules {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:
+    20px;
+
+}
+
+
+
+
+.module {
+
+    background:
+    white;
+
+    padding:
+    25px;
+
+    border-radius:
+    18px;
+
+    box-shadow:
+    var(--shadow);
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    20px;
+
+}
+
+
+
+
+
+.module-icon {
+
+    width:
+    55px;
+
+    height:
+    55px;
+
+    border-radius:
+    15px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    font-size:
+    1.5rem;
+
+    background:
+    #f1f5f9;
+
+}
+
+
+
+
+
+.module.locked {
+
+    opacity:
+    0.6;
+
+}
+
+
+
+
+
+.module h3 {
+
+    margin-bottom:
+    5px;
+
+}
+
+
+
+
+
+.module span {
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    600;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   XP REWARD CARD
+===================== */
+
+
+.xp-reward {
+
+    background:
+    linear-gradient(
+        135deg,
+        #fef9c3,
+        #fef3c7
+    );
+
+    padding:
+    25px;
+
+    border-radius:
+    20px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    20px;
+
+    margin-top:
+    30px;
+
+}
+
+
+
+.xp-reward i {
+
+    font-size:
+    2.5rem;
+
+    color:
+    var(--warning);
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+   ORION ACADEMY CARD
+===================== */
+
+
+.academy-orion {
+
+    margin-top:
+    40px;
+
+}
+
+
+
+.academy-orion .orion-card {
+
+    background:
+    linear-gradient(
+        135deg,
+        #dbeafe,
+        #dcfce7
+    );
+
+}
+
+
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:1000px){
+
+
+.course-grid {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.academy-hero {
+
+    flex-direction:
+    column;
+
+}
+
+
+
+.lesson-modules {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.course-grid {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.path-item {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+}
