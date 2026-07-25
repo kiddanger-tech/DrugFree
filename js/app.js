@@ -1,167 +1,161 @@
 /* ==========================================
    DRUGFREE QUEST
-   Main Application Controller
+   MAIN APPLICATION CONTROLLER
    ========================================== */
 
 
-// Wait until the website loads
-
-document.addEventListener("DOMContentLoaded", () => {
+class DrugFreeApp {
 
 
-    console.log(
-        "🚀 DrugFree Quest Started"
-    );
+    constructor(){
 
+        this.mode = "guest";
 
-    initializeApp();
+        this.initialized = false;
 
-
-});
+    }
 
 
 
 
-
-/* =========================
-   APPLICATION START
-========================= */
-
-
-function initializeApp(){
+    /* =========================
+       START APP
+    ========================= */
 
 
-    loadUserSession();
+    async init(){
 
 
-    initializeNavigation();
-
-
-    initializeOrion();
-
-
-    initializeAnimations();
-
-
-}
-
-
-
-
-
-
-/* =========================
-   USER SESSION CHECK
-========================= */
-
-
-function loadUserSession(){
-
-
-    const user =
-    localStorage.getItem(
-        "drugfreeUser"
-    );
-
-
-
-    if(user){
-
-
-        const userData =
-        JSON.parse(user);
+        if(this.initialized)
+            return;
 
 
 
         console.log(
-            "Welcome back:",
-            userData.username
+            "🚀 Starting DrugFree Quest..."
         );
 
 
 
-        updateUserInterface(
-            userData
-        );
+        this.checkMode();
+
+
+
+        if(this.mode === "online"){
+
+
+            await this.loadUser();
+
+
+            await this.startOnlineSystems();
+
+
+        }
+        else{
+
+
+            this.startGuestMode();
+
+
+        }
+
+
+
+        this.startOrion();
+
+
+
+        this.initialized = true;
+
 
 
     }
 
-    else {
+
+
+
+
+
+
+    /* =========================
+       CHECK USER MODE
+    ========================= */
+
+
+    checkMode(){
+
+
+        const guest =
+            localStorage.getItem(
+                "guestMode"
+            );
+
+
+
+        const firebaseUser =
+            FirebaseService.auth.currentUser;
+
+
+
+        if(firebaseUser){
+
+
+            this.mode =
+            "online";
+
+
+        }
+        else if(guest){
+
+
+            this.mode =
+            "guest";
+
+
+        }
+        else{
+
+
+            this.mode =
+            "guest";
+
+
+        }
+
 
 
         console.log(
-            "Guest mode active"
+            "App mode:",
+            this.mode
         );
-
-
-        enableGuestMode();
 
 
     }
 
 
-}
 
 
 
 
 
+    /* =========================
+       LOAD USER
+    ========================= */
 
 
-/* =========================
-   UPDATE USER UI
-========================= */
+    async loadUser(){
 
 
-function updateUserInterface(user){
+        if(window.User){
 
 
-
-    const usernameElements =
-    document.querySelectorAll(
-        ".username"
-    );
-
-
-
-    usernameElements.forEach(
-        element=>{
-
-
-            element.textContent =
-            user.username;
+            await User.load();
 
 
         }
-    );
 
 
-
-
-    const xpElements =
-    document.querySelectorAll(
-        ".user-xp"
-    );
-
-
-
-    xpElements.forEach(
-        element=>{
-
-
-            element.textContent =
-            user.xp + " XP";
-
-
-        }
-    );
-
-
-
-
-
-}
+    }
 
 
 
@@ -169,90 +163,41 @@ function updateUserInterface(user){
 
 
 
-
-/* =========================
-   GUEST MODE
-========================= */
-
-
-function enableGuestMode(){
+    /* =========================
+       ONLINE SYSTEMS
+    ========================= */
 
 
-    document.body.classList.add(
-        "guest-mode"
-    );
+    async startOnlineSystems(){
 
 
 
-    const guestElements =
-    document.querySelectorAll(
-        ".guest-access"
-    );
+        if(window.Streaks){
 
 
-
-    guestElements.forEach(
-        element=>{
-
-
-            element.style.display =
-            "block";
+            await Streaks.checkIn();
 
 
         }
-    );
 
 
 
-}
+        if(window.Badges){
 
 
+            const profile =
+            await DB.getUserProfile();
 
 
-
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-
-function initializeNavigation(){
-
-
-
-    const links =
-    document.querySelectorAll(
-        "[data-link]"
-    );
-
-
-
-    links.forEach(
-        link=>{
-
-
-            link.addEventListener(
-                "click",
-                ()=>{
-
-
-                    console.log(
-                        "Opening:",
-                        link.dataset.link
-                    );
-
-
-                }
+            await Badges.check(
+                profile
             );
 
 
         }
-    );
 
 
-
-}
+    }
 
 
 
@@ -260,98 +205,97 @@ function initializeNavigation(){
 
 
 
-
-/* =========================
-   ORION INITIALIZATION
-========================= */
-
-
-function initializeOrion(){
+    /* =========================
+       GUEST MODE
+    ========================= */
 
 
-
-    const orion =
-    document.querySelector(
-        ".orion"
-    );
-
-
-
-    if(orion){
-
-
-        orion.classList.add(
-            "orion-float"
-        );
+    startGuestMode(){
 
 
         console.log(
-            "🤖 Orion Online"
+            "Guest mode activated"
         );
 
 
-    }
+
+        if(window.Orion){
 
 
-}
+            Orion.say(
 
+            "Welcome guest! You can explore DrugFree Quest."
 
-
-
-
-
-
-/* =========================
-   ANIMATIONS
-========================= */
-
-
-function initializeAnimations(){
-
-
-
-    const cards =
-    document.querySelectorAll(
-        ".card"
-    );
-
-
-
-    cards.forEach(
-        card=>{
-
-
-            card.addEventListener(
-                "mouseenter",
-                ()=>{
-
-
-                    card.classList.add(
-                        "active"
-                    );
-
-
-                }
-            );
-
-
-
-            card.addEventListener(
-                "mouseleave",
-                ()=>{
-
-
-                    card.classList.remove(
-                        "active"
-                    );
-
-
-                }
             );
 
 
         }
-    );
+
+
+    }
+
+
+
+
+
+
+
+    /* =========================
+       ORION START
+    ========================= */
+
+
+    startOrion(){
+
+
+        if(window.Orion){
+
+
+            Orion.dailyMessage();
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+    /* =========================
+       PAGE PROTECTION
+    ========================= */
+
+
+    requireLogin(){
+
+
+        if(this.mode !== "online"){
+
+
+            alert(
+                "Please login to access this feature."
+            );
+
+
+            window.location.href =
+            "login.html";
+
+
+            return false;
+
+
+        }
+
+
+        return true;
+
+
+    }
+
 
 
 
@@ -362,45 +306,37 @@ function initializeAnimations(){
 
 
 
-
 /* =========================
-   GLOBAL APP FUNCTIONS
+   GLOBAL APP
 ========================= */
 
 
-window.DrugFreeQuest = {
+const App =
+new DrugFreeApp();
 
 
-    logout:function(){
+
+window.App =
+App;
 
 
-        localStorage.removeItem(
-            "drugfreeUser"
-        );
+
+document.addEventListener(
+
+"DOMContentLoaded",
+
+()=>{
 
 
-        window.location.href =
-        "login.html";
+    App.init();
 
 
-    },
+}
+
+);
 
 
-    getUser:function(){
 
-
-        const user =
-        localStorage.getItem(
-            "drugfreeUser"
-        );
-
-
-        return user ?
-        JSON.parse(user) :
-        null;
-
-
-    }
-
-
-};
+console.log(
+"✅ DrugFree Quest App Controller Ready"
+);
