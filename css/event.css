@@ -1,0 +1,409 @@
+/* ==========================================
+   DRUGFREE QUEST
+   EVENT PAGE DESIGN
+   ========================================== */
+
+
+/* =========================
+   EVENT INTRO
+========================= */
+
+
+.event-intro {
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 10px 25px
+
+    rgba(0,0,0,.08);
+
+}
+
+
+
+.event-intro h2 {
+
+
+    color:#ea580c;
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.event-intro p {
+
+
+    color:#475569;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   ORION MESSAGE
+========================= */
+
+
+.orion-card {
+
+
+    max-width:700px;
+
+
+    margin:25px auto;
+
+
+    padding:25px;
+
+
+    background:#fff7ed;
+
+
+    border-radius:25px;
+
+
+    border-left:
+
+    6px solid #f97316;
+
+
+}
+
+
+
+#orionMessage {
+
+
+    color:#9a3412;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   EVENT AREA
+========================= */
+
+
+.event-container {
+
+
+    max-width:1000px;
+
+
+    margin:30px auto;
+
+
+    padding:25px;
+
+
+}
+
+
+
+.event-container h2 {
+
+
+    text-align:center;
+
+
+    color:#1e293b;
+
+
+}
+
+
+
+
+
+
+
+#eventList {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+
+    repeat(
+
+    2,
+
+    1fr
+
+    );
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   EVENT CARD
+========================= */
+
+
+.event-card {
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 10px 25px
+
+    rgba(0,0,0,.08);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.event-card:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+}
+
+
+
+.event-card h3 {
+
+
+    color:#ea580c;
+
+
+    margin-top:0;
+
+
+}
+
+
+
+.event-card p {
+
+
+    color:#475569;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   REWARD TEXT
+========================= */
+
+
+.event-card span {
+
+
+    display:block;
+
+
+    margin:20px 0;
+
+
+    padding:10px;
+
+
+    background:#fef3c7;
+
+
+    border-radius:15px;
+
+
+    color:#92400e;
+
+
+    font-weight:bold;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   JOIN BUTTON
+========================= */
+
+
+.event-card button {
+
+
+    width:100%;
+
+
+    padding:14px;
+
+
+    border:none;
+
+
+    border-radius:25px;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #f97316,
+
+        #ea580c
+
+    );
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.event-card button:hover {
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+#eventList {
+
+
+    grid-template-columns:
+
+    1fr;
+
+
+}
+
+
+
+.event-intro {
+
+
+    margin:20px;
+
+
+}
+
+
+
+.event-container {
+
+
+    margin:20px;
+
+
+}
+
+
+}
