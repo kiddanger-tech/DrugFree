@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | DrugFree Quest</title>
+
+    <meta name="description"
+        content="Login to your DrugFree Quest account and continue your learning journey with Orion.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="auth-left">
+
+        <img src="assets/images/orion/orion-default.png"
+             alt="Orion"
+             class="orion-image">
+
+        <h1>Welcome Back!</h1>
+
+        <p>
+
+            Orion has been waiting for you.
+
+            Continue your lessons, maintain your streak,
+            unlock new badges,
+            and become a Drug-Free Champion.
+
+        </p>
+
+        <div class="orion-features">
+
+            <div>
+
+                <i class="fa-solid fa-fire"></i>
+
+                Continue Your Streak
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-star"></i>
+
+                Earn More XP
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-medal"></i>
+
+                Unlock New Badges
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-ranking-star"></i>
+
+                Climb the Leaderboards
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="auth-right">
+
+        <div class="form-card">
+
+            <h2>Sign In</h2>
+
+            <p class="subtitle">
+
+                Continue your DrugFree Quest journey.
+
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="email">
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="password">
+
+                        Password
+
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+                <div class="remember-row">
+
+                    <label class="remember-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="forgot-password.html">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-btn login-button">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <button
+                id="googleLogin"
+                class="google-btn">
+
+                <i class="fa-brands fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+            <p class="bottom-text">
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Register Here
+
+                </a>
+
+            </p>
+
+            <p class="bottom-text">
+
+                <a href="index.html">
+
+                    ← Back to Home
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="js/database/firebase-config.js"></script>
+<script type="module" src="js/auth/login.js"></script>
+
+</body>
+
+</html>
