@@ -9,18 +9,11 @@
 
 <title>Profile | DrugFree Quest</title>
 
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/profile.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/profile.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -28,61 +21,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <body>
 
 
-<!-- NAVIGATION -->
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-
-<i class="fa-solid fa-shield-heart"></i>
-
-DrugFree Quest
-
-</div>
+<header class="page-header">
 
 
-<ul>
+<h1>
 
-<li>
+👤 My Profile
+
+</h1>
+
+
 <a href="dashboard.html">
-Dashboard
+
+⬅ Dashboard
+
 </a>
-</li>
 
-
-<li>
-<a href="academy.html">
-Academy
-</a>
-</li>
-
-
-<li>
-<a href="missions.html">
-Missions
-</a>
-</li>
-
-
-<li>
-<a href="achievements.html">
-Achievements
-</a>
-</li>
-
-
-<li>
-<a class="active" href="#">
-Profile
-</a>
-</li>
-
-
-</ul>
-
-</nav>
 
 </header>
 
@@ -90,105 +44,161 @@ Profile
 
 
 
-<!-- PROFILE HERO -->
 
-<section class="profile-hero">
+
+<section class="profile-container">
+
+
+
+<div class="avatar-box">
+
+
+<img id="userAvatar"
+
+src="images/default-avatar.png"
+
+alt="Avatar">
+
+
+</div>
+
+
+
+
+
+<h2 id="username">
+
+Loading...
+
+</h2>
+
+
+
+<p id="email">
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="profile-stats">
 
 
 <div class="profile-card">
 
 
-<div class="avatar-container">
+<h3>
+
+⭐ XP
+
+</h3>
 
 
-<img src="../assets/images/profile/default-avatar.png"
-alt="Profile Avatar"
-class="profile-avatar">
+<p id="xp">
 
-
-<button class="change-avatar">
-
-<i class="fa-solid fa-camera"></i>
-
-</button>
-
-
-</div>
-
-
-
-<h1>
-
-Alex Explorer
-
-</h1>
-
-
-<p>
-
-@alexquest
+0
 
 </p>
 
 
-<div class="rank">
-
-
-🌱 Explorer Level 8
-
-</div>
-
-
-
-<button class="edit-profile">
-
-<i class="fa-solid fa-pen"></i>
-
-Edit Profile
-
-</button>
-
-
 </div>
 
 
 
 
 
-<div class="orion-profile">
+<div class="profile-card">
 
 
-<img src="../assets/images/orion/orion-happy.png"
-alt="Orion">
+<h3>
+
+🏆 Level
+
+</h3>
 
 
-<div>
+<p id="level">
+
+1
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="profile-card">
+
+
+<h3>
+
+🔥 Streak
+
+</h3>
+
+
+<p id="streak">
+
+0
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="profile-card">
+
+
+<h3>
+
+🪙 Coins
+
+</h3>
+
+
+<p id="coins">
+
+0
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="achievement-section">
 
 
 <h2>
 
-Orion Companion
+🏅 Achievements
 
 </h2>
 
 
-<p>
-
-Your companion is growing with you.
-
-</p>
-
-
-<h3>
-
-Evolution Stage:
-
-Explorer Guardian
-
-</h3>
-
-
-</div>
+<div id="badgeContainer">
 
 
 </div>
@@ -202,206 +212,17 @@ Explorer Guardian
 
 
 
-
-
-<!-- USER STATISTICS -->
-
-<section class="profile-stats">
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-star"></i>
-
-
-<h3>
-
-XP
-
-</h3>
-
-
-<h1>
-
-2450
-
-</h1>
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-fire"></i>
-
-
-<h3>
-
-Streak
-
-</h3>
-
-
-<h1>
-
-15 Days
-
-</h1>
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-medal"></i>
-
-
-<h3>
-
-Badges
-
-</h3>
-
-
-<h1>
-
-18
-
-</h1>
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-
-<h3>
-
-Certificates
-
-</h3>
-
-
-<h1>
-
-3
-
-</h1>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- PROFILE INFORMATION -->
-
-<section class="information">
+<section class="certificate-section">
 
 
 <h2>
 
-Personal Information
+📜 Certificates
 
 </h2>
 
 
-
-<div class="info-card">
-
-
-<div>
-
-<label>
-
-Full Name
-
-</label>
-
-<p>
-
-Alex Explorer
-
-</p>
-
-</div>
-
-
-<div>
-
-<label>
-
-Country
-
-</label>
-
-<p>
-
-Ghana
-
-</p>
-
-</div>
-
-
-<div>
-
-<label>
-
-School / Club
-
-</label>
-
-<p>
-
-Future Champions Club
-
-</p>
-
-</div>
-
-
-<div>
-
-<label>
-
-Member Since
-
-</label>
-
-<p>
-
-January 2026
-
-</p>
-
-</div>
+<div id="certificateContainer">
 
 
 </div>
@@ -415,68 +236,10 @@ January 2026
 
 
 
+<section class="orion-card">
 
 
-<!-- ORION PROGRESS -->
-
-<section class="orion-progress">
-
-
-<h2>
-
-Orion Growth
-
-</h2>
-
-
-<div class="growth-card">
-
-
-<img src="../assets/images/orion/orion-default.png"
-alt="Orion">
-
-
-<div>
-
-
-<h3>
-
-Next Evolution
-
-</h3>
-
-
-<p>
-
-Reach Level 15 to unlock Orion Guardian mode.
-
-</p>
-
-
-
-<div class="progress-bar">
-
-
-<div class="progress-fill">
-
-65%
-
-</div>
-
-
-</div>
-
-
-
-<p>
-
-2450 / 3500 XP
-
-</p>
-
-
-</div>
-
+<div id="orionMessage">
 
 </div>
 
@@ -490,133 +253,259 @@ Reach Level 15 to unlock Orion Guardian mode.
 
 
 
+<script src="js/database/firebase-config.js"></script>
 
-<!-- SETTINGS -->
+<script src="js/database/database.js"></script>
 
-<section class="settings">
+<script src="js/database/users.js"></script>
 
 
-<h2>
+<script src="js/game/badges.js"></script>
 
-Account Settings
+<script src="js/game/rewards.js"></script>
 
-</h2>
 
+<script src="js/mascot/orion.js"></script>
 
 
-<div class="settings-grid">
+<script src="js/app.js"></script>
 
 
-<a href="#">
 
-<i class="fa-solid fa-lock"></i>
 
-Change Password
 
-</a>
 
 
-<a href="#">
+<script>
 
-<i class="fa-solid fa-bell"></i>
 
-Notifications
+async function loadProfile(){
 
-</a>
 
 
-<a href="#">
+const profile =
 
-<i class="fa-solid fa-language"></i>
+await DB.getUserProfile();
 
-Language
 
-</a>
 
+if(!profile){
 
-<a href="#">
+return;
 
-<i class="fa-solid fa-right-from-bracket"></i>
+}
 
-Logout
 
-</a>
 
 
-</div>
 
+document.getElementById(
 
-</section>
+"username"
 
+)
 
+.innerHTML =
 
+profile.username || "Player";
 
 
 
 
 
+document.getElementById(
 
-<!-- ORION MESSAGE -->
+"email"
 
-<section class="orion-message">
+)
 
+.innerHTML =
 
-<div class="orion-card">
+profile.email || "";
 
 
-<img src="../assets/images/orion/orion-celebrate.png"
-alt="Orion">
 
 
-<div>
 
+document.getElementById(
 
-<h2>
+"xp"
 
-Orion Says
+)
 
-</h2>
+.innerHTML =
 
+profile.xp || 0;
 
-<p>
 
-Your journey is unique.
 
-Keep learning, keep growing,
-and inspire others to make healthy choices.
 
-</p>
 
+document.getElementById(
 
-</div>
+"level"
 
+)
 
-</div>
+.innerHTML =
 
+profile.level || 1;
 
-</section>
 
 
 
 
+document.getElementById(
 
+"streak"
 
+)
 
+.innerHTML =
 
-<footer>
+profile.streak || 0;
 
-<p>
 
-© 2026 DrugFree Quest
 
-</p>
 
-</footer>
 
+document.getElementById(
 
+"coins"
 
+)
 
-<script src="../js/app.js"></script>
+.innerHTML =
+
+profile.coins || 0;
+
+
+
+
+
+
+const badges =
+
+profile.badges || [];
+
+
+
+document.getElementById(
+
+"badgeContainer"
+
+)
+
+.innerHTML =
+
+badges.length
+
+?
+
+badges.map(
+
+badge =>
+
+`<span class="badge">
+
+🏅 ${badge}
+
+</span>`
+
+).join("")
+
+:
+
+"No badges yet";
+
+
+
+
+
+
+const certificates =
+
+profile.certificates || [];
+
+
+
+document.getElementById(
+
+"certificateContainer"
+
+)
+
+.innerHTML =
+
+certificates.length
+
+?
+
+certificates.map(
+
+certificate =>
+
+`<div class="certificate">
+
+📜 ${certificate.name}
+
+</div>`
+
+).join("")
+
+:
+
+"No certificates yet";
+
+
+
+
+
+
+
+if(window.Orion){
+
+
+Orion.say(
+
+"Welcome back! Keep building your amazing journey."
+
+);
+
+
+}
+
+
+
+}
+
+
+
+
+document.addEventListener(
+
+"DOMContentLoaded",
+
+()=>{
+
+
+setTimeout(
+
+loadProfile,
+
+1000
+
+);
+
+
+});
+
+
+
+</script>
+
+
+
 
 
 </body>
