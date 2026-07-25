@@ -3,411 +3,180 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Academy | DrugFree Quest</title>
+<title>DrugFree Quest Academy</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/academy.css">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+<link rel="stylesheet" href="css/academy.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
+
 <body>
 
-<!-- ================= NAVIGATION ================= -->
 
-<header>
+<header class="page-header">
 
-<nav class="navbar">
+<h1>
+📚 Orion Academy
+</h1>
 
-<div class="logo">
 
-<i class="fa-solid fa-shield-heart"></i>
+<a href="dashboard.html">
 
-DrugFree Quest
+⬅ Dashboard
 
-</div>
-
-<ul>
-
-<li><a href="dashboard.html">Dashboard</a></li>
-
-<li><a class="active" href="#">Academy</a></li>
-
-<li><a href="leaderboard.html">Leaderboard</a></li>
-
-<li><a href="community.html">Community</a></li>
-
-<li><a href="profile.html">Profile</a></li>
-
-</ul>
-
-</nav>
+</a>
 
 </header>
 
-<!-- ================= HERO ================= -->
 
-<section class="academy-hero">
 
-<div class="hero-left">
 
-<h1>
 
-Welcome to the Academy
+<section class="academy-intro">
 
-</h1>
-
-<p>
-
-Complete lessons, unlock achievements,
-earn XP,
-grow with Orion,
-and become a Drug-Free Champion.
-
-</p>
-
-<button>
-
-Continue Learning
-
-</button>
-
-</div>
-
-<div class="hero-right">
-
-<img src="../assets/images/orion/orion-default.png"
-     alt="Orion">
-
-</div>
-
-</section>
-
-<!-- ================= USER STATS ================= -->
-
-<section class="stats">
-
-<div class="stat-card">
-
-<h2>Level</h2>
-
-<h1>8</h1>
-
-</div>
-
-<div class="stat-card">
-
-<h2>XP</h2>
-
-<h1>2450</h1>
-
-</div>
-
-<div class="stat-card">
-
-<h2>Badges</h2>
-
-<h1>18</h1>
-
-</div>
-
-<div class="stat-card">
-
-<h2>Streak</h2>
-
-<h1>15 Days 🔥</h1>
-
-</div>
-
-</section>
-
-<!-- ================= PROGRESS ================= -->
-
-<section class="progress-section">
 
 <h2>
 
-Overall Progress
+Learn. Grow. Stay Strong.
 
 </h2>
 
-<div class="progress-bar">
 
-<div class="progress-fill">
+<p>
 
-80%
+Complete lessons, earn XP, unlock badges, and become a DrugFree Quest champion.
 
-</div>
+</p>
 
-</div>
 
 </section>
 
-<!-- ================= COURSES ================= -->
 
-<section class="courses">
+
+
+
+
+
+<section class="orion-card">
+
+
+<div id="orionMessage">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="lesson-area">
+
 
 <h2>
 
-Learning Journey
+Available Lessons
 
 </h2>
 
-<div class="course-grid">
 
-<div class="course-card">
 
-<div class="course-icon">
+<div id="lessonContainer">
 
-🌱
 
-</div>
-
-<h3>
-
-Foundations
-
-</h3>
-
-<p>
-
-Learn the basics of healthy choices.
-
-</p>
-
-<button>
-
-Start
-
-</button>
+<!-- Lessons load here -->
 
 </div>
 
-<div class="course-card">
-
-<div class="course-icon">
-
-🛡
-
-</div>
-
-<h3>
-
-Peer Pressure
-
-</h3>
-
-<p>
-
-Develop confidence and decision-making skills.
-
-</p>
-
-<button>
-
-Continue
-
-</button>
-
-</div>
-
-<div class="course-card locked">
-
-<div class="course-icon">
-
-🔒
-
-</div>
-
-<h3>
-
-Leadership
-
-</h3>
-
-<p>
-
-Unlock after completing previous modules.
-
-</p>
-
-<button disabled>
-
-Locked
-
-</button>
-
-</div>
-
-</div>
 
 </section>
 
-<!-- ================= DAILY MISSION ================= -->
 
-<section class="mission">
 
-<h2>
 
-Today's Mission
 
-</h2>
 
-<div class="mission-card">
 
-<h3>
+<script src="js/database/firebase-config.js"></script>
 
-Complete 2 Lessons
+<script src="js/database/database.js"></script>
 
-</h3>
+<script src="js/database/users.js"></script>
 
-<p>
 
-Reward
+<script src="js/game/xp-system.js"></script>
 
-<strong>
+<script src="js/game/badges.js"></script>
 
-+150 XP
 
-</strong>
+<script src="js/learning/lessons.js"></script>
 
-</p>
 
-<button>
+<script src="js/mascot/orion.js"></script>
 
-Start Mission
 
-</button>
+<script src="js/app.js"></script>
 
-</div>
 
-</section>
 
-<!-- ================= BADGES ================= -->
 
-<section class="badges">
 
-<h2>
 
-Recent Badges
+<script>
 
-</h2>
 
-<div class="badge-grid">
+document.addEventListener(
 
-<div class="badge">
+"DOMContentLoaded",
 
-🏅
+()=>{
 
-<p>
 
-First Lesson
+setTimeout(()=>{
 
-</p>
 
-</div>
+Lessons.display(
 
-<div class="badge">
+"lessonContainer"
 
-🔥
+);
 
-<p>
 
-7 Day Streak
 
-</p>
+if(window.Orion){
 
-</div>
+Orion.say(
 
-<div class="badge">
+"Welcome to Orion Academy! Choose a lesson and start your journey."
 
-🌱
+);
 
-<p>
+}
 
-Healthy Choices
 
-</p>
+},1000);
 
-</div>
 
-<div class="badge">
 
-🛡
+});
 
-<p>
 
-Guardian
+</script>
 
-</p>
 
-</div>
 
-</div>
-
-</section>
-
-<!-- ================= ORION ================= -->
-
-<section class="orion">
-
-<div class="orion-card">
-
-<img src="../assets/images/orion/orion-happy.png"
-     alt="Orion">
-
-<div>
-
-<h2>
-
-Orion Says
-
-</h2>
-
-<p>
-
-Fantastic progress!
-
-Complete today's mission to keep your streak alive.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-
-© 2026 DrugFree Quest
-
-</p>
-
-</footer>
-
-<script src="../js/app.js"></script>
 
 </body>
 
