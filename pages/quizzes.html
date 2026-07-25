@@ -1,1 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quizzes | DrugFree Quest</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/quizzes.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+DrugFree Quest
+
+</div>
+
+
+<ul>
+
+<li>
+<a href="dashboard.html">
+Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="academy.html">
+Academy
+</a>
+</li>
+
+
+<li>
+<a class="active" href="#">
+Quizzes
+</a>
+</li>
+
+
+<li>
+<a href="missions.html">
+Missions
+</a>
+</li>
+
+
+<li>
+<a href="profile.html">
+Profile
+</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<!-- HERO -->
+
+<section class="quiz-hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+
+🧠 Knowledge Challenges
+
+</h1>
+
+
+<p>
+
+Test what you have learned,
+earn XP,
+and unlock new achievements.
+
+</p>
+
+
+</div>
+
+
+
+<div class="hero-image">
+
+
+<img src="../assets/images/orion/orion-thinking.png"
+alt="Orion Thinking">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- QUIZ STATS -->
+
+<section class="quiz-stats">
+
+
+<div class="quiz-stat-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>
+
+Quizzes Completed
+
+</h3>
+
+<h1>
+
+42
+
+</h1>
+
+</div>
+
+
+
+
+<div class="quiz-stat-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>
+
+Quiz XP Earned
+
+</h3>
+
+<h1>
+
+1850
+
+</h1>
+
+</div>
+
+
+
+
+<div class="quiz-stat-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h3>
+
+Best Score
+
+</h3>
+
+<h1>
+
+98%
+
+</h1>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- QUIZ CATEGORIES -->
+
+<section class="quiz-categories">
+
+
+<h2>
+
+Quiz Categories
+
+</h2>
+
+
+
+<div class="quiz-grid">
+
+
+
+
+
+<div class="quiz-card">
+
+
+<div class="quiz-icon">
+
+🌱
+
+</div>
+
+
+<h3>
+
+Healthy Choices
+
+</h3>
+
+
+<p>
+
+Learn about positive decisions and habits.
+
+</p>
+
+
+<div class="quiz-info">
+
+10 Questions
+
+<br>
+
++100 XP
+
+</div>
+
+
+<button>
+
+Start Quiz
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="quiz-card">
+
+
+<div class="quiz-icon">
+
+🛡
+
+</div>
+
+
+<h3>
+
+Handling Pressure
+
+</h3>
+
+
+<p>
+
+Build confidence and decision-making skills.
+
+</p>
+
+
+<div class="quiz-info">
+
+15 Questions
+
+<br>
+
++150 XP
+
+</div>
+
+
+<button>
+
+Start Quiz
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="quiz-card locked">
+
+
+<div class="quiz-icon">
+
+🔒
+
+</div>
+
+
+<h3>
+
+Advanced Knowledge
+
+</h3>
+
+
+<p>
+
+Complete beginner quizzes first.
+
+</p>
+
+
+<div class="quiz-info">
+
+Locked
+
+</div>
+
+
+<button disabled>
+
+Locked
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ACTIVE QUIZ PREVIEW -->
+
+<section class="active-quiz">
+
+
+<h2>
+
+Daily Challenge
+
+</h2>
+
+
+
+<div class="question-card">
+
+
+<div class="question-number">
+
+Question 1 / 5
+
+</div>
+
+
+
+<h3>
+
+What is an important part of making healthy decisions?
+
+</h3>
+
+
+
+
+<div class="answer-options">
+
+
+<button>
+
+A. Thinking about consequences
+
+</button>
+
+
+<button>
+
+B. Ignoring advice
+
+</button>
+
+
+<button>
+
+C. Following pressure
+
+</button>
+
+
+<button>
+
+D. Avoiding learning
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- REWARDS -->
+
+
+<section class="quiz-rewards">
+
+
+<div class="reward-card">
+
+
+<i class="fa-solid fa-gift"></i>
+
+
+<div>
+
+
+<h2>
+
+Complete Quiz Reward
+
+</h2>
+
+
+<p>
+
+Earn:
+
+<strong>
+
++100 XP
+
+</strong>
+
+and unlock progress toward badges.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ORION -->
+
+
+<section class="orion-message">
+
+
+<div class="orion-card">
+
+
+<img src="../assets/images/orion/orion-happy.png"
+alt="Orion">
+
+
+<div>
+
+
+<h2>
+
+Orion's Quiz Tip
+
+</h2>
+
+
+<p>
+
+Learning is not about getting every answer right.
+
+Every question helps you grow stronger.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 DrugFree Quest
+
+</p>
+
+</footer>
+
+
+
+
+<script src="../js/app.js"></script>
+
+
+</body>
+
+</html>
