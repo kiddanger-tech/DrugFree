@@ -1,120 +1,156 @@
 /* ==========================================
-   DRUGFREE QUEST - RESPONSIVE SYSTEM
-   Global Mobile Optimization
+   DRUGFREE QUEST
+   GLOBAL RESPONSIVE DESIGN
    ========================================== */
 
 
-
-/* =====================
-   LARGE TABLETS
-===================== */
-
-
-@media (max-width:1200px){
+/* =========================
+   TABLETS
+========================= */
 
 
-.container {
+@media(max-width:1024px){
 
-    width:
-    92%;
+
+
+.page-header {
+
+
+    padding:20px;
+
 
 }
 
+
+
+.page-header h1 {
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+.profile-stats {
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+}
+
+
+
+
+
+#missionContainer,
+
+
+#eventList,
+
+
+#achievementContainer {
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+body {
+
+
+    overflow-x:hidden;
+
+
+}
+
+
+
+
+
+
+
+/* HEADER */
+
+
+.page-header {
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.page-header h1 {
+
+
+    font-size:24px;
+
+
+}
+
+
+
+
+
+
+
+/* GENERAL SECTIONS */
 
 
 section {
 
-    padding:
-    60px 4%;
 
-}
+    width:auto;
 
 
-
-h1 {
-
-    font-size:
-    2.2rem;
-
-}
+    margin-left:15px !important;
 
 
-
-h2 {
-
-    font-size:
-    1.8rem;
-
-}
+    margin-right:15px !important;
 
 
 }
 
 
-
-
-
-
-
-/* =====================
-   TABLETS
-===================== */
-
-
-@media(max-width:900px){
-
-
-
-/* NAVIGATION */
-
-
-.navbar {
-
-    height:
-    70px;
-
-}
-
-
-
-.navbar ul {
-
-    display:
-    none;
-
-}
-
-
-
-/* HERO SECTIONS */
-
-
-.dashboard-hero,
-.academy-hero,
-.community-hero,
-.leaderboard-hero,
-.quiz-hero,
-.mission-hero,
-.certificate-hero {
-
-    flex-direction:
-    column;
-
-    text-align:
-    center;
-
-}
-
-
-
-.hero-image img,
-.academy-hero img,
-.quiz-hero img {
-
-    width:
-    170px;
-
-}
 
 
 
@@ -123,143 +159,29 @@ h2 {
 /* GRIDS */
 
 
-.course-grid,
-.quiz-grid,
-.club-grid,
-.mission-grid {
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-}
-
-
-
-.stats,
 .profile-stats,
-.mission-stats,
-.quiz-stats {
+
+
+#missionContainer,
+
+
+#eventList,
+
+
+#achievementContainer,
+
+
+#certificateContainer {
+
 
     grid-template-columns:
-    repeat(2,1fr);
 
-}
-
-
-
-
-
-/* ORION */
-
-
-.orion-card {
-
-    flex-direction:
-    column;
-
-    text-align:
-    center;
-
-}
-
-
-
-.orion-card img {
-
-    width:
-    120px;
-
-}
-
+    1fr !important;
 
 
 }
 
 
-
-
-
-
-
-
-/* =====================
-   MOBILE PHONES
-===================== */
-
-
-@media(max-width:600px){
-
-
-
-body {
-
-    overflow-x:
-    hidden;
-
-}
-
-
-
-
-section {
-
-    padding:
-    40px 5%;
-
-}
-
-
-
-/* TYPOGRAPHY */
-
-
-h1 {
-
-    font-size:
-    1.8rem;
-
-}
-
-
-
-h2 {
-
-    font-size:
-    1.5rem;
-
-}
-
-
-
-p {
-
-    font-size:
-    0.95rem;
-
-}
-
-
-
-
-
-/* NAVBAR */
-
-
-.navbar {
-
-    width:
-    95%;
-
-}
-
-
-
-.logo {
-
-    font-size:
-    1.2rem;
-
-}
 
 
 
@@ -268,34 +190,14 @@ p {
 /* BUTTONS */
 
 
-.primary-btn,
-.secondary-btn {
+button {
 
-    width:
-    100%;
+
+    max-width:100%;
+
 
 }
 
-
-
-
-/* ALL GRIDS */
-
-
-.course-grid,
-.quiz-grid,
-.club-grid,
-.mission-grid,
-.achievement-grid,
-.certificate-grid,
-.reward-showcase,
-.action-grid,
-.settings-grid {
-
-    grid-template-columns:
-    1fr;
-
-}
 
 
 
@@ -305,14 +207,29 @@ p {
 /* CARDS */
 
 
-.card,
-.course-card,
-.quiz-card,
+.profile-card,
+
+
 .mission-card,
-.club-card {
 
-    padding:
-    20px;
+
+.event-card,
+
+
+.badge-card,
+
+
+.certificate-card,
+
+
+.setting-card,
+
+
+.post-card {
+
+
+    padding:20px;
+
 
 }
 
@@ -320,90 +237,59 @@ p {
 
 
 
-/* TABLES */
 
 
-.leaderboard-table {
+/* TEXT */
 
-    overflow-x:
-    auto;
+
+h1 {
+
+
+    font-size:26px;
+
 
 }
 
 
 
-.table-header,
+h2 {
+
+
+    font-size:24px;
+
+
+}
+
+
+
+p {
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+
+
+/* TABLE STYLE LEADERBOARD */
+
+
 .leader-row {
 
-    min-width:
-    600px;
 
-}
+    display:flex;
 
 
+    flex-direction:column;
 
 
+    text-align:center;
 
-/* PROFILE */
-
-
-.profile-card {
-
-    padding:
-    25px;
-
-}
-
-
-
-.profile-avatar {
-
-    width:
-    110px;
-
-    height:
-    110px;
-
-}
-
-
-
-
-
-/* AUTH */
-
-
-.auth-container {
-
-    border-radius:
-    15px;
-
-}
-
-
-
-.auth-form {
-
-    padding:
-    25px;
-
-}
-
-
-
-.auth-orion {
-
-    padding:
-    25px;
-
-}
-
-
-
-.auth-orion img {
-
-    width:
-    140px;
 
 }
 
@@ -412,49 +298,28 @@ p {
 
 
 
-/* MISSION */
+
+/* NAVIGATION */
 
 
-.mission-reward {
+.page-header a {
 
-    flex-direction:
-    column;
 
-    text-align:
-    center;
+    display:inline-block;
+
+
+    padding:10px 20px;
+
+
+    border-radius:20px;
+
+
+    background:#eff6ff;
+
 
 }
 
 
-
-
-
-/* DISCUSSIONS */
-
-
-.discussion-card {
-
-    flex-direction:
-    column;
-
-    text-align:
-    center;
-
-}
-
-
-
-
-
-/* CERTIFICATES */
-
-
-.certificate-card {
-
-    padding:
-    25px;
-
-}
 
 
 
@@ -463,35 +328,26 @@ p {
 /* ORION */
 
 
-.orion {
+#orion {
 
-    width:
-    100px;
+
+    width:100px;
+
 
 }
 
 
 
-.orion-bubble {
+.orion-card {
 
-    width:
-    100%;
+
+    margin:20px;
+
 
 }
 
 
 
-
-
-/* FOOTER */
-
-
-footer {
-
-    padding:
-    25px 15px;
-
-}
 
 
 }
@@ -502,57 +358,56 @@ footer {
 
 
 
-
-/* =====================
+/* =========================
    SMALL PHONES
-===================== */
+========================= */
 
 
-@media(max-width:380px){
+@media(max-width:480px){
 
 
 
-.logo {
+.page-header h1 {
 
-    font-size:
-    1rem;
+
+    font-size:22px;
+
 
 }
 
 
 
-section {
+.lesson-view,
 
-    padding:
-    30px 4%;
+
+.quiz-box,
+
+
+.settings-container {
+
+
+    padding:15px;
+
 
 }
 
 
 
-h1 {
+.quiz-question {
 
-    font-size:
-    1.5rem;
+
+    padding:15px;
+
 
 }
 
 
 
-.stat-card h1,
-.mission-stat h1 {
-
-    font-size:
-    1.6rem;
-
-}
+.ranking-controls button {
 
 
+    font-size:14px;
 
-button {
-
-    font-size:
-    0.9rem;
 
 }
 
