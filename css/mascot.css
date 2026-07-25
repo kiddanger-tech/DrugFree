@@ -1,1 +1,644 @@
+/* ==========================================
+   DRUGFREE QUEST - ORION MASCOT STYLE
+   ========================================== */
 
+
+
+/* =====================
+   ORION BASE
+===================== */
+
+
+.orion {
+
+    width:
+    150px;
+
+    animation:
+    orionFloat 4s ease-in-out infinite;
+
+}
+
+
+
+.orion img {
+
+    width:
+    100%;
+
+    display:
+    block;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   FLOAT ANIMATION
+===================== */
+
+
+@keyframes orionFloat {
+
+
+0% {
+
+    transform:
+    translateY(0px);
+
+}
+
+
+50% {
+
+    transform:
+    translateY(-18px);
+
+}
+
+
+100% {
+
+    transform:
+    translateY(0px);
+
+}
+
+
+}
+
+
+
+.orion-float {
+
+    animation:
+    orionFloat 4s infinite;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION TALKING EFFECT
+===================== */
+
+
+.orion-speaking {
+
+    animation:
+    talking 0.8s infinite;
+
+}
+
+
+
+@keyframes talking {
+
+
+0% {
+
+    transform:
+    scale(1);
+
+}
+
+
+
+50% {
+
+    transform:
+    scale(1.05);
+
+}
+
+
+
+100% {
+
+    transform:
+    scale(1);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION MESSAGE BUBBLE
+===================== */
+
+
+.orion-bubble {
+
+    position:
+    relative;
+
+    background:
+    white;
+
+    padding:
+    20px 25px;
+
+    border-radius:
+    20px;
+
+    box-shadow:
+    var(--shadow);
+
+    max-width:
+    350px;
+
+    font-weight:
+    500;
+
+}
+
+
+
+
+
+.orion-bubble::before {
+
+    content:
+    "";
+
+    position:
+    absolute;
+
+    left:
+    30px;
+
+    bottom:
+    -12px;
+
+    width:
+    25px;
+
+    height:
+    25px;
+
+    background:
+    white;
+
+    transform:
+    rotate(45deg);
+
+}
+
+
+
+
+
+.orion-bubble h3 {
+
+    color:
+    var(--primary-dark);
+
+    margin-bottom:
+    8px;
+
+}
+
+
+
+
+
+.orion-bubble p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION MOODS
+===================== */
+
+
+.orion-happy {
+
+    filter:
+    drop-shadow(
+    0 10px 20px rgba(34,197,94,0.25)
+    );
+
+}
+
+
+
+.orion-excited {
+
+    animation:
+    excited 1s infinite;
+
+}
+
+
+
+@keyframes excited {
+
+
+0% {
+
+    transform:
+    rotate(0deg);
+
+}
+
+
+25% {
+
+    transform:
+    rotate(5deg);
+
+}
+
+
+50% {
+
+    transform:
+    rotate(-5deg);
+
+}
+
+
+75% {
+
+    transform:
+    rotate(5deg);
+
+}
+
+
+100% {
+
+    transform:
+    rotate(0deg);
+
+}
+
+
+}
+
+
+
+
+
+
+
+.orion-sad {
+
+    opacity:
+    0.75;
+
+    filter:
+    grayscale(30%);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   XP CELEBRATION
+===================== */
+
+
+.xp-popup {
+
+    position:
+    absolute;
+
+    color:
+    var(--warning);
+
+    font-weight:
+    800;
+
+    font-size:
+    1.5rem;
+
+    animation:
+    xpRise 2s forwards;
+
+}
+
+
+
+
+
+@keyframes xpRise {
+
+
+0% {
+
+    opacity:
+    0;
+
+    transform:
+    translateY(20px);
+
+}
+
+
+
+30% {
+
+    opacity:
+    1;
+
+}
+
+
+
+100% {
+
+    opacity:
+    0;
+
+    transform:
+    translateY(-70px);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION LEVEL BADGE
+===================== */
+
+
+.orion-level {
+
+    display:
+    inline-flex;
+
+    align-items:
+    center;
+
+    gap:
+    8px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fef3c7,
+        #fde68a
+    );
+
+    padding:
+    8px 18px;
+
+    border-radius:
+    50px;
+
+    font-weight:
+    700;
+
+    color:
+    #92400e;
+
+}
+
+
+
+
+
+.orion-level i {
+
+    color:
+    #f59e0b;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION EVOLUTION
+===================== */
+
+
+.orion-evolution {
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    gap:
+    20px;
+
+}
+
+
+
+
+
+.evolution-stage {
+
+    width:
+    80px;
+
+    height:
+    80px;
+
+    border-radius:
+    50%;
+
+    background:
+    #f1f5f9;
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.evolution-stage.active {
+
+    background:
+    #dcfce7;
+
+    transform:
+    scale(1.15);
+
+    border:
+    3px solid var(--primary);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION LOADING
+===================== */
+
+
+.orion-loading {
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    gap:
+    8px;
+
+}
+
+
+
+.orion-loading span {
+
+    width:
+    10px;
+
+    height:
+    10px;
+
+    background:
+    var(--primary);
+
+    border-radius:
+    50%;
+
+    animation:
+    loadingDots 1.2s infinite;
+
+}
+
+
+
+.orion-loading span:nth-child(2) {
+
+    animation-delay:
+    0.2s;
+
+}
+
+
+
+.orion-loading span:nth-child(3) {
+
+    animation-delay:
+    0.4s;
+
+}
+
+
+
+
+
+@keyframes loadingDots {
+
+
+0%,
+100% {
+
+    transform:
+    translateY(0);
+
+}
+
+
+50% {
+
+    transform:
+    translateY(-10px);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:600px){
+
+
+.orion {
+
+    width:
+    110px;
+
+}
+
+
+
+.orion-bubble {
+
+    max-width:
+    280px;
+
+}
+
+
+
+.orion-evolution {
+
+    flex-wrap:
+    wrap;
+
+}
+
+
+}
