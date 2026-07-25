@@ -1,79 +1,63 @@
 /* ==========================================
-   DRUGFREE QUEST - ACADEMY STYLE
+   DRUGFREE QUEST
+   ORION ACADEMY DESIGN
    ========================================== */
 
 
+/* =========================
+   PAGE HEADER
+========================= */
 
-/* =====================
-   ACADEMY HERO
-===================== */
 
+.page-header {
 
-.academy-hero {
+    display:flex;
 
-    display:
-    flex;
+    justify-content:space-between;
 
-    justify-content:
-    space-between;
+    align-items:center;
 
-    align-items:
-    center;
-
-    gap:
-    40px;
+    padding:20px 30px;
 
     background:
+
     linear-gradient(
         135deg,
-        #ecfdf5,
-        #eff6ff
+        #2563eb,
+        #7c3aed
     );
 
-    border-radius:
-    25px;
+    color:white;
 
-    margin:
-    30px 5%;
+    border-radius:0 0 25px 25px;
 
 }
 
 
 
-.academy-hero h1 {
+.page-header h1 {
 
-    font-size:
-    2.6rem;
+    margin:0;
 
-    color:
-    var(--dark);
-
-    margin-bottom:
-    15px;
+    font-size:30px;
 
 }
 
 
 
-.academy-hero p {
+.page-header a {
 
-    color:
-    var(--muted);
+    color:white;
 
-    max-width:
-    600px;
+    text-decoration:none;
 
-}
+    background:
 
+    rgba(255,255,255,.2);
 
+    padding:10px 20px;
 
-.academy-hero img {
-
-    width:
-    220px;
-
-    animation:
-    float 4s infinite;
+    border-radius:20px;
 
 }
 
@@ -81,491 +65,312 @@
 
 
 
+/* =========================
+   INTRO SECTION
+========================= */
 
-/* =====================
-   COURSE GRID
-===================== */
+
+.academy-intro {
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 25px
+
+    rgba(0,0,0,.08);
+
+}
 
 
-.course-grid {
 
-    display:
-    grid;
+.academy-intro h2 {
+
+    color:#2563eb;
+
+    font-size:30px;
+
+}
+
+
+
+.academy-intro p {
+
+    color:#475569;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   ORION MESSAGE
+========================= */
+
+
+.orion-card {
+
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    padding:20px;
+
+    background:#ecfeff;
+
+    border-left:
+
+    6px solid #06b6d4;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+#orionMessage {
+
+
+    font-size:18px;
+
+    color:#164e63;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   LESSON AREA
+========================= */
+
+
+.lesson-area {
+
+
+    max-width:1000px;
+
+    margin:30px auto;
+
+    padding:20px;
+
+
+}
+
+
+
+.lesson-area h2 {
+
+
+    text-align:center;
+
+    color:#1e293b;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   LESSON GRID
+========================= */
+
+
+#lessonContainer {
+
+
+    display:grid;
+
 
     grid-template-columns:
 
-    repeat(3,1fr);
+    repeat(
+    3,
+    1fr
+    );
 
-    gap:
-    25px;
+
+    gap:20px;
+
 
 }
 
 
 
 
-.course-card {
 
-    position:
-    relative;
 
-    overflow:
-    hidden;
+
+
+/* =========================
+   LESSON CARD
+========================= */
+
+
+.lesson-card {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 8px 20px
+
+    rgba(0,0,0,.08);
+
+
+
+    transition:.3s;
+
 
 }
 
 
 
+.lesson-card:hover {
 
-.course-card:hover {
 
     transform:
+
     translateY(-8px);
 
+
 }
 
 
 
 
 
-.course-icon {
+.lesson-card h3 {
 
-    width:
-    70px;
 
-    height:
-    70px;
+    color:#2563eb;
 
-    border-radius:
-    20px;
+    margin-top:0;
+
+
+}
+
+
+
+.lesson-card p {
+
+
+    color:#475569;
+
+
+}
+
+
+
+.lesson-card span {
+
+
+    display:block;
+
+
+    margin:15px 0;
+
+
+    color:#f59e0b;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+.lesson-card button {
+
+
+    width:100%;
+
+
+    padding:12px;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
 
     background:
-    #dcfce7;
 
-    display:
-    flex;
 
-    align-items:
-    center;
-
-    justify-content:
-    center;
-
-    font-size:
-    2rem;
-
-    margin-bottom:
-    20px;
-
-}
-
-
-
-
-
-.course-card h3 {
-
-    margin-bottom:
-    10px;
-
-}
-
-
-
-.course-card p {
-
-    color:
-    var(--muted);
-
-}
-
-
-
-
-
-.course-meta {
-
-    display:
-    flex;
-
-    justify-content:
-    space-between;
-
-    margin-top:
-    20px;
-
-    color:
-    var(--primary-dark);
-
-    font-weight:
-    600;
-
-}
-
-
-
-
-
-.course-card button {
-
-    margin-top:
-    20px;
-
-    width:
-    100%;
-
-    padding:
-    12px;
-
-    border-radius:
-    50px;
-
-    background:
-    var(--primary);
-
-    color:
-    white;
-
-    font-weight:
-    700;
-
-}
-
-
-
-
-
-.course-card button:hover {
-
-    background:
-    var(--primary-dark);
-
-}
-
-
-
-
-
-
-
-/* =====================
-   LEARNING PATH
-===================== */
-
-
-.learning-path {
-
-    max-width:
-    900px;
-
-    margin:
-    auto;
-
-}
-
-
-
-
-.path-item {
-
-    display:
-    flex;
-
-    align-items:
-    center;
-
-    gap:
-    25px;
-
-    margin-bottom:
-    25px;
-
-}
-
-
-
-
-.path-circle {
-
-    width:
-    70px;
-
-    height:
-    70px;
-
-    border-radius:
-    50%;
-
-    display:
-    flex;
-
-    align-items:
-    center;
-
-    justify-content:
-    center;
-
-    font-size:
-    1.5rem;
-
-    font-weight:
-    bold;
-
-    flex-shrink:
-    0;
-
-}
-
-
-
-
-
-.path-completed {
-
-    background:
-    var(--primary);
-
-    color:
-    white;
-
-}
-
-
-
-.path-current {
-
-    background:
-    var(--blue);
-
-    color:
-    white;
-
-}
-
-
-
-.path-locked {
-
-    background:
-    #e2e8f0;
-
-    color:
-    #64748b;
-
-}
-
-
-
-
-
-.path-content {
-
-    background:
-    white;
-
-    padding:
-    20px;
-
-    border-radius:
-    18px;
-
-    box-shadow:
-    var(--shadow);
-
-    flex:
-    1;
-
-}
-
-
-
-
-
-.path-content h3 {
-
-    margin-bottom:
-    5px;
-
-}
-
-
-
-.path-content p {
-
-    color:
-    var(--muted);
-
-}
-
-
-
-
-
-
-
-/* =====================
-   LESSON MODULES
-===================== */
-
-
-.lesson-modules {
-
-    display:
-    grid;
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-    gap:
-    20px;
-
-}
-
-
-
-
-.module {
-
-    background:
-    white;
-
-    padding:
-    25px;
-
-    border-radius:
-    18px;
-
-    box-shadow:
-    var(--shadow);
-
-    display:
-    flex;
-
-    align-items:
-    center;
-
-    gap:
-    20px;
-
-}
-
-
-
-
-
-.module-icon {
-
-    width:
-    55px;
-
-    height:
-    55px;
-
-    border-radius:
-    15px;
-
-    display:
-    flex;
-
-    align-items:
-    center;
-
-    justify-content:
-    center;
-
-    font-size:
-    1.5rem;
-
-    background:
-    #f1f5f9;
-
-}
-
-
-
-
-
-.module.locked {
-
-    opacity:
-    0.6;
-
-}
-
-
-
-
-
-.module h3 {
-
-    margin-bottom:
-    5px;
-
-}
-
-
-
-
-
-.module span {
-
-    color:
-    var(--primary-dark);
-
-    font-weight:
-    600;
-
-}
-
-
-
-
-
-
-
-/* =====================
-   XP REWARD CARD
-===================== */
-
-
-.xp-reward {
-
-    background:
     linear-gradient(
+
         135deg,
-        #fef9c3,
-        #fef3c7
+
+        #22c55e,
+
+        #16a34a
+
     );
 
-    padding:
-    25px;
 
-    border-radius:
-    20px;
+    color:white;
 
-    display:
-    flex;
 
-    align-items:
-    center;
+    font-weight:bold;
 
-    gap:
-    20px;
 
-    margin-top:
-    30px;
+    cursor:pointer;
+
+
+    transition:.3s;
+
 
 }
 
 
 
-.xp-reward i {
+.lesson-card button:hover {
 
-    font-size:
-    2.5rem;
 
-    color:
-    var(--warning);
+    transform:scale(1.05);
+
 
 }
 
@@ -573,101 +378,46 @@
 
 
 
+/* =========================
+   MOBILE DESIGN
+========================= */
 
 
-
-/* =====================
-   ORION ACADEMY CARD
-===================== */
+@media(max-width:768px){
 
 
-.academy-orion {
+.page-header {
 
-    margin-top:
-    40px;
+
+    flex-direction:column;
+
+    gap:15px;
+
 
 }
 
 
 
-.academy-orion .orion-card {
+#lessonContainer {
 
-    background:
-    linear-gradient(
-        135deg,
-        #dbeafe,
-        #dcfce7
-    );
-
-}
-
-
-
-
-
-
-
-/* =====================
-   RESPONSIVE
-===================== */
-
-
-@media(max-width:1000px){
-
-
-.course-grid {
 
     grid-template-columns:
-    repeat(2,1fr);
 
-}
-
-
-
-.academy-hero {
-
-    flex-direction:
-    column;
-
-}
-
-
-
-.lesson-modules {
-
-    grid-template-columns:
     1fr;
 
-}
-
 
 }
 
 
 
+.academy-intro {
 
 
-@media(max-width:600px){
+    margin:20px;
 
-
-.course-grid {
-
-    grid-template-columns:
-    1fr;
 
 }
 
-
-
-.path-item {
-
-    flex-direction:
-    column;
-
-    text-align:
-    center;
-
-}
 
 
 }
