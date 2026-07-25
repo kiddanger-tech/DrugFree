@@ -1,1 +1,628 @@
+/* ==========================================
+   DRUGFREE QUEST - COMMUNITY STYLE
+   ========================================== */
 
+
+
+/* =====================
+   COMMUNITY HERO
+===================== */
+
+
+.community-hero {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    gap:
+    40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #dcfce7,
+        #dbeafe
+    );
+
+    border-radius:
+    25px;
+
+    margin:
+    30px 5%;
+
+}
+
+
+
+.hero-text {
+
+    flex:
+    1;
+
+}
+
+
+
+.community-hero h1 {
+
+    font-size:
+    2.5rem;
+
+    color:
+    var(--dark);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.community-hero p {
+
+    color:
+    var(--muted);
+
+    max-width:
+    600px;
+
+}
+
+
+
+.community-hero button {
+
+    margin-top:
+    25px;
+
+    padding:
+    14px 30px;
+
+    border-radius:
+    50px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    font-weight:
+    700;
+
+}
+
+
+
+.hero-image img {
+
+    width:
+    220px;
+
+    animation:
+    float 4s infinite;
+
+}
+
+
+
+
+
+/* =====================
+   COMMUNITY STATS
+===================== */
+
+
+.community-stats {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:
+    25px;
+
+}
+
+
+
+.stat-card {
+
+    text-align:
+    center;
+
+}
+
+
+
+.stat-card i {
+
+    color:
+    var(--primary);
+
+    font-size:
+    2rem;
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+
+
+
+/* =====================
+   CLUB SECTION
+===================== */
+
+
+.club-grid {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:
+    25px;
+
+}
+
+
+
+.club-card {
+
+    background:
+    white;
+
+    padding:
+    30px;
+
+    border-radius:
+    20px;
+
+    box-shadow:
+    var(--shadow);
+
+    text-align:
+    center;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.club-card:hover {
+
+    transform:
+    translateY(-8px);
+
+}
+
+
+
+.club-icon {
+
+    font-size:
+    3rem;
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.club-card p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.club-card span {
+
+    display:
+    block;
+
+    margin:
+    15px 0;
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    600;
+
+}
+
+
+
+.club-card button {
+
+    width:
+    100%;
+
+    padding:
+    12px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    border-radius:
+    50px;
+
+    font-weight:
+    700;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   DISCUSSIONS
+===================== */
+
+
+.discussion-list {
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    gap:
+    20px;
+
+}
+
+
+
+.discussion-card {
+
+    background:
+    white;
+
+    padding:
+    20px;
+
+    border-radius:
+    18px;
+
+    display:
+    flex;
+
+    gap:
+    20px;
+
+    align-items:
+    center;
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.avatar {
+
+    width:
+    55px;
+
+    height:
+    55px;
+
+    border-radius:
+    50%;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    font-size:
+    1.3rem;
+
+    font-weight:
+    700;
+
+}
+
+
+
+.discussion-card p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.discussion-card span {
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    600;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   COMMUNITY CHALLENGE
+===================== */
+
+
+.challenge {
+
+    margin-top:
+    30px;
+
+}
+
+
+
+.challenge-card {
+
+    background:
+    linear-gradient(
+        135deg,
+        #fef9c3,
+        #dcfce7
+    );
+
+    padding:
+    35px;
+
+    border-radius:
+    25px;
+
+    text-align:
+    center;
+
+}
+
+
+
+.challenge-card h2 {
+
+    color:
+    var(--dark);
+
+}
+
+
+
+.challenge-progress {
+
+    height:
+    20px;
+
+    background:
+    white;
+
+    border-radius:
+    50px;
+
+    overflow:
+    hidden;
+
+    margin:
+    20px 0;
+
+}
+
+
+
+.challenge-progress .progress {
+
+    height:
+    100%;
+
+    width:
+    70%;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    font-size:
+    12px;
+
+    font-weight:
+    bold;
+
+}
+
+
+
+.challenge-card button {
+
+    padding:
+    12px 30px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    border-radius:
+    50px;
+
+    font-weight:
+    700;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ORION COMMUNITY
+===================== */
+
+
+.orion-message {
+
+    margin-top:
+    30px;
+
+}
+
+
+
+.orion-card {
+
+    background:
+    linear-gradient(
+        135deg,
+        #ecfccb,
+        #dcfce7
+    );
+
+}
+
+
+
+.orion-card h2 {
+
+    color:
+    var(--primary-dark);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:1000px){
+
+
+.community-stats {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.club-grid {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.community-hero {
+
+    flex-direction:
+    column;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.community-stats {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.club-grid {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.discussion-card {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+}
