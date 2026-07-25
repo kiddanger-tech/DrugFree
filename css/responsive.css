@@ -1,1 +1,561 @@
+/* ==========================================
+   DRUGFREE QUEST - RESPONSIVE SYSTEM
+   Global Mobile Optimization
+   ========================================== */
 
+
+
+/* =====================
+   LARGE TABLETS
+===================== */
+
+
+@media (max-width:1200px){
+
+
+.container {
+
+    width:
+    92%;
+
+}
+
+
+
+section {
+
+    padding:
+    60px 4%;
+
+}
+
+
+
+h1 {
+
+    font-size:
+    2.2rem;
+
+}
+
+
+
+h2 {
+
+    font-size:
+    1.8rem;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   TABLETS
+===================== */
+
+
+@media(max-width:900px){
+
+
+
+/* NAVIGATION */
+
+
+.navbar {
+
+    height:
+    70px;
+
+}
+
+
+
+.navbar ul {
+
+    display:
+    none;
+
+}
+
+
+
+/* HERO SECTIONS */
+
+
+.dashboard-hero,
+.academy-hero,
+.community-hero,
+.leaderboard-hero,
+.quiz-hero,
+.mission-hero,
+.certificate-hero {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+.hero-image img,
+.academy-hero img,
+.quiz-hero img {
+
+    width:
+    170px;
+
+}
+
+
+
+
+
+/* GRIDS */
+
+
+.course-grid,
+.quiz-grid,
+.club-grid,
+.mission-grid {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.stats,
+.profile-stats,
+.mission-stats,
+.quiz-stats {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+
+
+/* ORION */
+
+
+.orion-card {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+.orion-card img {
+
+    width:
+    120px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+   MOBILE PHONES
+===================== */
+
+
+@media(max-width:600px){
+
+
+
+body {
+
+    overflow-x:
+    hidden;
+
+}
+
+
+
+
+section {
+
+    padding:
+    40px 5%;
+
+}
+
+
+
+/* TYPOGRAPHY */
+
+
+h1 {
+
+    font-size:
+    1.8rem;
+
+}
+
+
+
+h2 {
+
+    font-size:
+    1.5rem;
+
+}
+
+
+
+p {
+
+    font-size:
+    0.95rem;
+
+}
+
+
+
+
+
+/* NAVBAR */
+
+
+.navbar {
+
+    width:
+    95%;
+
+}
+
+
+
+.logo {
+
+    font-size:
+    1.2rem;
+
+}
+
+
+
+
+
+/* BUTTONS */
+
+
+.primary-btn,
+.secondary-btn {
+
+    width:
+    100%;
+
+}
+
+
+
+
+/* ALL GRIDS */
+
+
+.course-grid,
+.quiz-grid,
+.club-grid,
+.mission-grid,
+.achievement-grid,
+.certificate-grid,
+.reward-showcase,
+.action-grid,
+.settings-grid {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+
+
+
+/* CARDS */
+
+
+.card,
+.course-card,
+.quiz-card,
+.mission-card,
+.club-card {
+
+    padding:
+    20px;
+
+}
+
+
+
+
+
+/* TABLES */
+
+
+.leaderboard-table {
+
+    overflow-x:
+    auto;
+
+}
+
+
+
+.table-header,
+.leader-row {
+
+    min-width:
+    600px;
+
+}
+
+
+
+
+
+/* PROFILE */
+
+
+.profile-card {
+
+    padding:
+    25px;
+
+}
+
+
+
+.profile-avatar {
+
+    width:
+    110px;
+
+    height:
+    110px;
+
+}
+
+
+
+
+
+/* AUTH */
+
+
+.auth-container {
+
+    border-radius:
+    15px;
+
+}
+
+
+
+.auth-form {
+
+    padding:
+    25px;
+
+}
+
+
+
+.auth-orion {
+
+    padding:
+    25px;
+
+}
+
+
+
+.auth-orion img {
+
+    width:
+    140px;
+
+}
+
+
+
+
+
+
+/* MISSION */
+
+
+.mission-reward {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+
+
+/* DISCUSSIONS */
+
+
+.discussion-card {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+
+
+/* CERTIFICATES */
+
+
+.certificate-card {
+
+    padding:
+    25px;
+
+}
+
+
+
+
+
+/* ORION */
+
+
+.orion {
+
+    width:
+    100px;
+
+}
+
+
+
+.orion-bubble {
+
+    width:
+    100%;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    padding:
+    25px 15px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+   SMALL PHONES
+===================== */
+
+
+@media(max-width:380px){
+
+
+
+.logo {
+
+    font-size:
+    1rem;
+
+}
+
+
+
+section {
+
+    padding:
+    30px 4%;
+
+}
+
+
+
+h1 {
+
+    font-size:
+    1.5rem;
+
+}
+
+
+
+.stat-card h1,
+.mission-stat h1 {
+
+    font-size:
+    1.6rem;
+
+}
+
+
+
+button {
+
+    font-size:
+    0.9rem;
+
+}
+
+
+
+}
