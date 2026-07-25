@@ -1,1 +1,729 @@
+/* ==========================================
+   DRUGFREE QUEST - GLOBAL STYLE SYSTEM
+   ========================================== */
 
+
+/* =====================
+   GOOGLE FONT FALLBACK
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* Brand Colors */
+
+    --primary: #22c55e;
+    --primary-dark: #15803d;
+    --secondary: #16a34a;
+
+    --blue: #2563eb;
+    --purple: #7c3aed;
+
+    --warning: #f59e0b;
+    --danger: #ef4444;
+
+
+    /* Backgrounds */
+
+    --background: #f8fafc;
+    --card: #ffffff;
+    --dark: #0f172a;
+
+
+    /* Text */
+
+    --text: #1e293b;
+    --muted: #64748b;
+    --white: #ffffff;
+
+
+    /* Effects */
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    --radius: 18px;
+
+    --transition:
+    all 0.3s ease;
+
+}
+
+
+
+
+/* =====================
+   BODY
+===================== */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+    var(--background);
+
+    color:
+    var(--text);
+
+    line-height: 1.6;
+
+}
+
+
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+
+
+
+button {
+
+    font-family:
+    inherit;
+
+    cursor:
+    pointer;
+
+    border:
+    none;
+
+}
+
+
+
+
+/* =====================
+   CONTAINER
+===================== */
+
+
+.container {
+
+    width:
+    90%;
+
+    max-width:
+    1200px;
+
+    margin:
+    auto;
+
+}
+
+
+
+
+
+/* =====================
+   NAVIGATION
+===================== */
+
+
+header {
+
+    background:
+    rgba(255,255,255,0.95);
+
+    backdrop-filter:
+    blur(10px);
+
+    position:
+    sticky;
+
+    top:
+    0;
+
+    z-index:
+    1000;
+
+    box-shadow:
+    0 4px 20px rgba(0,0,0,0.05);
+
+}
+
+
+
+.navbar {
+
+    width:
+    90%;
+
+    max-width:
+    1200px;
+
+    margin:
+    auto;
+
+    height:
+    80px;
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+}
+
+
+
+.logo {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    10px;
+
+    font-size:
+    1.5rem;
+
+    font-weight:
+    700;
+
+    color:
+    var(--primary-dark);
+
+}
+
+
+
+.logo i {
+
+    font-size:
+    2rem;
+
+}
+
+
+
+.navbar ul {
+
+    display:
+    flex;
+
+    gap:
+    25px;
+
+    list-style:
+    none;
+
+}
+
+
+
+.navbar a {
+
+    color:
+    var(--text);
+
+    font-weight:
+    500;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.navbar a:hover,
+.navbar a.active {
+
+    color:
+    var(--primary);
+
+}
+
+
+
+
+
+/* =====================
+   BUTTON SYSTEM
+===================== */
+
+
+.primary-btn {
+
+    display:
+    inline-flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    gap:
+    8px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    padding:
+    14px 28px;
+
+    border-radius:
+    50px;
+
+    font-weight:
+    600;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.primary-btn:hover {
+
+    background:
+    var(--primary-dark);
+
+    transform:
+    translateY(-3px);
+
+}
+
+
+
+
+.secondary-btn {
+
+    display:
+    inline-flex;
+
+    padding:
+    14px 28px;
+
+    border-radius:
+    50px;
+
+    background:
+    white;
+
+    color:
+    var(--primary-dark);
+
+    border:
+    2px solid var(--primary);
+
+    font-weight:
+    600;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.secondary-btn:hover {
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+}
+
+
+
+
+
+.google-btn {
+
+    width:
+    100%;
+
+    padding:
+    14px;
+
+    border-radius:
+    12px;
+
+    background:
+    white;
+
+    border:
+    1px solid #ddd;
+
+    font-weight:
+    600;
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    align-items:
+    center;
+
+    gap:
+    10px;
+
+}
+
+
+
+
+
+/* =====================
+   CARDS
+===================== */
+
+
+.card,
+.stat-card,
+.course-card,
+.mission-card {
+
+    background:
+    var(--card);
+
+    border-radius:
+    var(--radius);
+
+    box-shadow:
+    var(--shadow);
+
+    padding:
+    25px;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.card:hover,
+.course-card:hover,
+.mission-card:hover {
+
+    transform:
+    translateY(-8px);
+
+}
+
+
+
+
+
+/* =====================
+   SECTION TITLES
+===================== */
+
+
+section {
+
+    padding:
+    70px 5%;
+
+}
+
+
+
+section h2 {
+
+    font-size:
+    2rem;
+
+    margin-bottom:
+    30px;
+
+    text-align:
+    center;
+
+    color:
+    var(--dark);
+
+}
+
+
+
+
+/* =====================
+   ORION COMPONENT
+===================== */
+
+
+.orion-card {
+
+    background:
+    linear-gradient(
+        135deg,
+        #dcfce7,
+        #ffffff
+    );
+
+    border-radius:
+    var(--radius);
+
+    padding:
+    30px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    30px;
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.orion-card img {
+
+    width:
+    130px;
+
+}
+
+
+
+
+
+/* =====================
+   PROGRESS BAR
+===================== */
+
+
+.progress-bar {
+
+    width:
+    100%;
+
+    height:
+    18px;
+
+    background:
+    #e2e8f0;
+
+    border-radius:
+    50px;
+
+    overflow:
+    hidden;
+
+}
+
+
+
+.progress-fill {
+
+    height:
+    100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--primary),
+        #86efac
+    );
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    color:
+    white;
+
+    font-size:
+    12px;
+
+    font-weight:
+    bold;
+
+}
+
+
+
+
+
+/* =====================
+   FOOTER
+===================== */
+
+
+footer {
+
+    background:
+    var(--dark);
+
+    color:
+    white;
+
+    text-align:
+    center;
+
+    padding:
+    30px;
+
+}
+
+
+
+
+
+/* =====================
+   ANIMATIONS
+===================== */
+
+
+@keyframes float {
+
+    0% {
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:
+        translateY(-15px);
+
+    }
+
+
+    100% {
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+
+.float {
+
+    animation:
+    float 4s infinite;
+
+}
+
+
+
+
+
+
+/* =====================
+   SCROLLBAR
+===================== */
+
+
+::-webkit-scrollbar {
+
+    width:
+    10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+    var(--primary);
+
+    border-radius:
+    20px;
+
+}
+
+
+
+
+
+/* =====================
+   RESPONSIVE BASE
+===================== */
+
+
+@media(max-width:900px){
+
+
+.navbar ul {
+
+    display:
+    none;
+
+}
+
+
+
+.orion-card {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+section {
+
+    padding:
+    50px 5%;
+
+}
+
+
+}
