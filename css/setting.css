@@ -1,0 +1,410 @@
+/* ==========================================
+   DRUGFREE QUEST
+   SETTINGS PAGE DESIGN
+   ========================================== */
+
+
+/* =========================
+   SETTINGS INTRO
+========================= */
+
+
+.settings-intro {
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 10px 25px
+
+    rgba(0,0,0,.08);
+
+}
+
+
+
+.settings-intro h2 {
+
+
+    color:#2563eb;
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.settings-intro p {
+
+
+    color:#475569;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   ORION MESSAGE
+========================= */
+
+
+.orion-card {
+
+
+    max-width:700px;
+
+
+    margin:25px auto;
+
+
+    padding:25px;
+
+
+    background:#eff6ff;
+
+
+    border-radius:25px;
+
+
+    border-left:
+
+    6px solid #2563eb;
+
+
+}
+
+
+
+#orionMessage {
+
+
+    color:#1e40af;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SETTINGS CONTAINER
+========================= */
+
+
+.settings-container {
+
+
+    max-width:900px;
+
+
+    margin:30px auto;
+
+
+    padding:20px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SETTINGS CARD
+========================= */
+
+
+.setting-card {
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 8px 20px
+
+    rgba(0,0,0,.08);
+
+
+}
+
+
+
+.setting-card h3 {
+
+
+    color:#7c3aed;
+
+
+    margin-top:0;
+
+
+}
+
+
+
+.setting-card p {
+
+
+    color:#475569;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   TOGGLE OPTIONS
+========================= */
+
+
+.setting-card label {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:12px;
+
+
+    color:#334155;
+
+
+    font-size:17px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.setting-card input[type="checkbox"] {
+
+
+    width:20px;
+
+
+    height:20px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   LOGOUT BUTTON
+========================= */
+
+
+#logoutButton {
+
+
+    padding:15px 35px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #ef4444,
+
+        #dc2626
+
+    );
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+#logoutButton:hover {
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   DARK MODE SUPPORT
+========================= */
+
+
+.dark-mode {
+
+
+    background:#0f172a;
+
+
+    color:white;
+
+
+}
+
+
+
+.dark-mode .setting-card,
+
+.dark-mode .settings-intro {
+
+
+    background:#1e293b;
+
+
+    color:white;
+
+
+}
+
+
+
+.dark-mode p {
+
+
+    color:#cbd5e1;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+.settings-intro {
+
+
+    margin:20px;
+
+
+}
+
+
+
+.settings-container {
+
+
+    margin:20px;
+
+
+}
+
+
+
+.setting-card {
+
+
+    padding:20px;
+
+
+}
+
+
+}
