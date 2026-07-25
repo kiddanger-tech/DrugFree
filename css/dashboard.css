@@ -1,137 +1,79 @@
 /* ==========================================
-   DRUGFREE QUEST - DASHBOARD STYLE
+   DRUGFREE QUEST
+   DASHBOARD DESIGN
    ========================================== */
 
 
+/* =========================
+   HEADER
+========================= */
 
-/* =====================
-   DASHBOARD HERO
-===================== */
+.dashboard-header {
 
+    display:flex;
 
-.dashboard-hero {
+    justify-content:space-between;
 
-    display:
-    flex;
+    align-items:center;
 
-    justify-content:
-    space-between;
-
-    align-items:
-    center;
-
-    gap:
-    40px;
+    padding:20px;
 
     background:
     linear-gradient(
         135deg,
-        #dcfce7,
-        #ffffff
+        #0f766e,
+        #2563eb
     );
 
-    border-radius:
-    25px;
+    color:white;
 
-    margin:
-    30px 5%;
+    border-radius:0 0 25px 25px;
 
 }
 
 
 
-.welcome {
+.dashboard-header h1 {
 
-    flex:
-    1;
+    margin:0;
 
-}
-
-
-
-.welcome h1 {
-
-    font-size:
-    2.5rem;
-
-    color:
-    var(--dark);
-
-    margin-bottom:
-    15px;
+    font-size:28px;
 
 }
 
 
 
-.welcome span {
-
-    color:
-    var(--primary-dark);
-
-}
+/* =========================
+   LOGOUT BUTTON
+========================= */
 
 
+.logout-btn {
 
-.welcome p {
+    background:#ef4444;
 
-    color:
-    var(--muted);
+    color:white;
 
-    font-size:
-    1.1rem;
+    border:none;
 
-}
+    padding:10px 20px;
 
+    border-radius:20px;
 
+    cursor:pointer;
 
+    font-weight:bold;
 
-
-/* =====================
-   XP BOX
-===================== */
-
-
-.xp-box {
-
-    margin-top:
-    30px;
-
-    background:
-    white;
-
-    padding:
-    25px;
-
-    border-radius:
-    var(--radius);
-
-    box-shadow:
-    var(--shadow);
+    transition:.3s;
 
 }
 
 
+.logout-btn:hover {
 
-.xp-box h3 {
+    background:#dc2626;
 
-    color:
-    var(--primary-dark);
-
-    margin-bottom:
-    15px;
-
-}
-
-
-
-.xp-box p {
-
-    margin-top:
-    10px;
-
-    font-weight:
-    600;
+    transform:scale(1.05);
 
 }
 
@@ -139,69 +81,90 @@
 
 
 
-/* =====================
+/* =========================
    ORION CARD
-===================== */
+========================= */
 
 
-.orion-box {
+.orion-card {
 
-    background:
-    white;
+    margin:25px auto;
 
-    padding:
-    25px;
+    max-width:700px;
 
-    border-radius:
-    25px;
+    padding:25px;
 
-    display:
-    flex;
+    display:flex;
 
-    align-items:
-    center;
+    align-items:center;
 
-    gap:
-    20px;
+    gap:20px;
+
+    background:white;
+
+    border-radius:25px;
 
     box-shadow:
-    var(--shadow);
-
-    max-width:
-    350px;
+    0 10px 30px
+    rgba(0,0,0,.1);
 
 }
 
 
 
-.orion-box img {
+.orion-image img {
 
-    width:
-    120px;
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
 
     animation:
-    float 4s infinite;
+
+    float 3s infinite ease-in-out;
 
 }
 
 
 
-.orion-box h3 {
+@keyframes float {
 
-    color:
-    var(--primary-dark);
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
 
 }
 
 
 
-.orion-box p {
 
-    color:
-    var(--muted);
 
-    font-size:
-    0.9rem;
+#orionMessage {
+
+    font-size:18px;
+
+    color:#334155;
+
+    font-weight:600;
 
 }
 
@@ -210,324 +173,111 @@
 
 
 
+/* =========================
+   PROFILE CARD
+========================= */
 
-/* =====================
-   STAT CARDS
-===================== */
+
+.profile-card {
+
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.08);
+
+}
+
+
+
+.profile-card h2 {
+
+    text-align:center;
+
+    color:#1e293b;
+
+}
+
+
+
+
+
+/* =========================
+   STAT BOXES
+========================= */
 
 
 .stats {
 
-    display:
-    grid;
+
+    display:grid;
 
     grid-template-columns:
-    repeat(4,1fr);
 
-    gap:
-    25px;
+    repeat(
+    4,
+    1fr
+    );
+
+    gap:15px;
+
 
 }
 
 
 
-.stat-card {
-
-    text-align:
-    center;
-
-}
+.stat-box {
 
 
-
-.stat-card i {
-
-    font-size:
-    2rem;
-
-    color:
-    var(--primary);
-
-    margin-bottom:
-    15px;
-
-}
-
-
-
-.stat-card h3 {
-
-    color:
-    var(--muted);
-
-}
-
-
-
-.stat-card h1 {
-
-    color:
-    var(--dark);
-
-    font-size:
-    2rem;
-
-}
-
-
-
-
-
-
-
-/* =====================
-   DAILY MISSION
-===================== */
-
-
-.daily-mission {
-
-    margin-top:
-    20px;
-
-}
-
-
-
-.mission-card {
-
-    display:
-    flex;
-
-    justify-content:
-    space-between;
-
-    align-items:
-    center;
-
-}
-
-
-
-.mission-card button {
+    padding:20px;
 
     background:
-    var(--primary);
 
-    color:
-    white;
+    linear-gradient(
+        135deg,
+        #ecfeff,
+        #dbeafe
+    );
 
-    padding:
-    12px 25px;
 
-    border-radius:
-    50px;
+    border-radius:20px;
 
-    font-weight:
-    600;
+    text-align:center;
+
 
 }
 
 
 
-.mission-card button:hover {
-
-    background:
-    var(--primary-dark);
-
-}
+.stat-box h3 {
 
 
+    margin:0;
 
-
-
-/* =====================
-   LEARNING JOURNEY
-===================== */
-
-
-.learning-progress {
-
-    text-align:
-    center;
+    color:#2563eb;
 
 }
 
 
 
-.path {
+.stat-box p {
 
-    display:
-    flex;
 
-    justify-content:
-    center;
+    font-size:28px;
 
-    gap:
-    30px;
+    font-weight:bold;
 
-    flex-wrap:
-    wrap;
+    margin:10px 0 0;
 
-}
-
-
-
-.step {
-
-    width:
-    220px;
-
-    background:
-    white;
-
-    padding:
-    25px;
-
-    border-radius:
-    20px;
-
-    box-shadow:
-    var(--shadow);
-
-}
-
-
-
-.step span {
-
-    width:
-    50px;
-
-    height:
-    50px;
-
-    border-radius:
-    50%;
-
-    display:
-    flex;
-
-    justify-content:
-    center;
-
-    align-items:
-    center;
-
-    margin:
-    auto auto 15px;
-
-    font-weight:
-    bold;
-
-}
-
-
-
-.step.completed span {
-
-    background:
-    var(--primary);
-
-    color:
-    white;
-
-}
-
-
-
-.step.active span {
-
-    background:
-    var(--blue);
-
-    color:
-    white;
-
-}
-
-
-
-.step.locked span {
-
-    background:
-    #e2e8f0;
-
-}
-
-
-
-
-
-/* =====================
-   ACTIVITY LIST
-===================== */
-
-
-.activity-list {
-
-    display:
-    flex;
-
-    flex-direction:
-    column;
-
-    gap:
-    15px;
-
-}
-
-
-
-.activity-card {
-
-    background:
-    white;
-
-    padding:
-    20px;
-
-    border-radius:
-    15px;
-
-    display:
-    flex;
-
-    align-items:
-    center;
-
-    gap:
-    20px;
-
-    box-shadow:
-    var(--shadow);
-
-}
-
-
-
-.activity-card i {
-
-    color:
-    var(--primary);
-
-    font-size:
-    1.4rem;
-
-}
-
-
-
-.activity-card span {
-
-    margin-left:
-    auto;
-
-    font-weight:
-    700;
-
-    color:
-    var(--primary-dark);
 
 }
 
@@ -537,78 +287,152 @@
 
 
 
-/* =====================
-   QUICK ACTIONS
-===================== */
+/* =========================
+   MENU
+========================= */
 
 
-.action-grid {
+.dashboard-menu {
 
-    display:
-    grid;
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    display:grid;
+
 
     grid-template-columns:
-    repeat(4,1fr);
 
-    gap:
-    20px;
+    repeat(
+    3,
+    1fr
+    );
+
+
+    gap:20px;
+
 
 }
 
 
 
-.action-grid a {
 
-    background:
-    white;
+.dashboard-menu a {
 
-    padding:
-    25px;
 
-    border-radius:
-    18px;
+    text-decoration:none;
 
-    text-align:
-    center;
+    color:#1e293b;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+
 
     box-shadow:
-    var(--shadow);
 
-    font-weight:
-    600;
+    0 8px 20px
+    rgba(0,0,0,.08);
 
-    transition:
-    var(--transition);
+
+    transition:.3s;
+
 
 }
 
 
 
-.action-grid a i {
+.dashboard-menu a:hover {
 
-    display:
-    block;
-
-    font-size:
-    2rem;
-
-    color:
-    var(--primary);
-
-    margin-bottom:
-    15px;
-
-}
-
-
-
-.action-grid a:hover {
 
     transform:
-    translateY(-8px);
+
+    translateY(-5px);
+
+
+    background:#eff6ff;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+
+.progress-card {
+
+
+    max-width:800px;
+
+    margin:25px auto;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:25px;
+
+    text-align:center;
+
+}
+
+
+
+.progress-bar {
+
+
+    width:100%;
+
+    height:25px;
+
+    background:#e2e8f0;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.progress-fill {
+
+
+    height:100%;
+
+    width:0%;
+
 
     background:
-    #f0fdf4;
+
+    linear-gradient(
+        90deg,
+        #22c55e,
+        #16a34a
+    );
+
+
+    transition:
+
+    width 1s ease;
+
 
 }
 
@@ -617,94 +441,63 @@
 
 
 
+/* =========================
+   MOBILE
+========================= */
 
-/* =====================
-   RESPONSIVE
-===================== */
+
+@media(max-width:768px){
 
 
-@media(max-width:1000px){
+.dashboard-header {
+
+
+    flex-direction:column;
+
+    gap:15px;
+
+
+}
+
+
+
+.orion-card {
+
+
+    flex-direction:column;
+
+    text-align:center;
+
+
+}
+
 
 
 .stats {
 
-    grid-template-columns:
-    repeat(2,1fr);
-
-}
-
-
-
-.action-grid {
 
     grid-template-columns:
-    repeat(2,1fr);
 
-}
-
-
-
-.dashboard-hero {
-
-    flex-direction:
-    column;
-
-}
-
-
-
-.orion-box {
-
-    max-width:
-    100%;
-
-}
+    repeat(
+    2,
+    1fr
+    );
 
 
 }
 
 
 
+.dashboard-menu {
 
-@media(max-width:600px){
-
-
-.stats {
 
     grid-template-columns:
+
     1fr;
 
-}
-
-
-
-.action-grid {
-
-    grid-template-columns:
-    1fr;
 
 }
 
-
-
-.welcome h1 {
-
-    font-size:
-    2rem;
-
-}
-
-
-
-.mission-card {
-
-    flex-direction:
-    column;
-
-    gap:
-    20px;
-
-}
 
 
 }
