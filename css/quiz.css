@@ -1,0 +1,703 @@
+/* ==========================================
+   DRUGFREE QUEST - QUIZ STYLE
+   ========================================== */
+
+
+
+/* =====================
+   QUIZ HERO
+===================== */
+
+
+.quiz-hero {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    gap:
+    40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #dcfce7,
+        #dbeafe
+    );
+
+    border-radius:
+    25px;
+
+    margin:
+    30px 5%;
+
+}
+
+
+
+.quiz-hero h1 {
+
+    font-size:
+    2.5rem;
+
+    color:
+    var(--dark);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.quiz-hero p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.quiz-hero img {
+
+    width:
+    220px;
+
+    animation:
+    float 4s infinite;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   QUIZ STATS
+===================== */
+
+
+.quiz-stats {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:
+    25px;
+
+}
+
+
+
+.quiz-stat-card {
+
+    background:
+    white;
+
+    padding:
+    30px;
+
+    border-radius:
+    20px;
+
+    text-align:
+    center;
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.quiz-stat-card i {
+
+    font-size:
+    2rem;
+
+    color:
+    var(--primary);
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.quiz-stat-card h3 {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.quiz-stat-card h1 {
+
+    color:
+    var(--dark);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   QUIZ GRID
+===================== */
+
+
+.quiz-grid {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:
+    25px;
+
+}
+
+
+
+
+.quiz-card {
+
+    background:
+    white;
+
+    padding:
+    30px;
+
+    border-radius:
+    22px;
+
+    box-shadow:
+    var(--shadow);
+
+    text-align:
+    center;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.quiz-card:hover {
+
+    transform:
+    translateY(-8px);
+
+}
+
+
+
+.quiz-icon {
+
+    font-size:
+    3rem;
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+
+.quiz-card p {
+
+    color:
+    var(--muted);
+
+}
+
+
+
+.quiz-info {
+
+    margin:
+    20px 0;
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    700;
+
+}
+
+
+
+.quiz-card button {
+
+    width:
+    100%;
+
+    padding:
+    13px;
+
+    border-radius:
+    50px;
+
+    background:
+    var(--primary);
+
+    color:
+    white;
+
+    font-weight:
+    700;
+
+}
+
+
+
+.quiz-card button:hover {
+
+    background:
+    var(--primary-dark);
+
+}
+
+
+
+
+.quiz-card.locked {
+
+    opacity:
+    0.65;
+
+}
+
+
+
+.quiz-card.locked button {
+
+    background:
+    #94a3b8;
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+   QUESTION CARD
+===================== */
+
+
+.active-quiz {
+
+    max-width:
+    900px;
+
+    margin:
+    auto;
+
+}
+
+
+
+.question-card {
+
+    background:
+    white;
+
+    padding:
+    35px;
+
+    border-radius:
+    25px;
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+
+.question-number {
+
+    color:
+    var(--primary-dark);
+
+    font-weight:
+    700;
+
+    margin-bottom:
+    15px;
+
+}
+
+
+
+.question-card h3 {
+
+    font-size:
+    1.4rem;
+
+    margin-bottom:
+    25px;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   ANSWERS
+===================== */
+
+
+.answer-options {
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    gap:
+    15px;
+
+}
+
+
+
+.answer-options button {
+
+    text-align:
+    left;
+
+    padding:
+    18px;
+
+    background:
+    #f8fafc;
+
+    border:
+    2px solid #e2e8f0;
+
+    border-radius:
+    15px;
+
+    font-weight:
+    600;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.answer-options button:hover {
+
+    border-color:
+    var(--primary);
+
+    background:
+    #f0fdf4;
+
+}
+
+
+
+.answer-correct {
+
+    background:
+    #dcfce7 !important;
+
+    border-color:
+    var(--primary) !important;
+
+}
+
+
+
+.answer-wrong {
+
+    background:
+    #fee2e2 !important;
+
+    border-color:
+    var(--danger) !important;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   REWARD CARD
+===================== */
+
+
+.quiz-rewards {
+
+    max-width:
+    900px;
+
+    margin:
+    auto;
+
+}
+
+
+
+.reward-card {
+
+    background:
+    linear-gradient(
+        135deg,
+        #fef3c7,
+        #dcfce7
+    );
+
+    padding:
+    30px;
+
+    border-radius:
+    25px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    25px;
+
+}
+
+
+
+.reward-card i {
+
+    font-size:
+    3rem;
+
+    color:
+    var(--warning);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   STREAK SYSTEM
+===================== */
+
+
+.streak-card {
+
+    background:
+    #fff7ed;
+
+    padding:
+    25px;
+
+    border-radius:
+    20px;
+
+    text-align:
+    center;
+
+}
+
+
+
+.streak-card i {
+
+    color:
+    #f97316;
+
+    font-size:
+    2rem;
+
+}
+
+
+
+.streak-number {
+
+    font-size:
+    2.5rem;
+
+    font-weight:
+    800;
+
+    color:
+    #ea580c;
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+   ORION QUIZ TIP
+===================== */
+
+
+.orion-message {
+
+    margin-top:
+    30px;
+
+}
+
+
+
+.orion-card {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    25px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ecfccb,
+        #dbeafe
+    );
+
+    padding:
+    30px;
+
+    border-radius:
+    25px;
+
+}
+
+
+
+.orion-card img {
+
+    width:
+    120px;
+
+}
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:1000px){
+
+
+.quiz-grid {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.quiz-hero {
+
+    flex-direction:
+    column;
+
+}
+
+
+
+.quiz-stats {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.quiz-grid {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+
+.reward-card,
+.orion-card {
+
+    flex-direction:
+    column;
+
+    text-align:
+    center;
+
+}
+
+
+
+.question-card {
+
+    padding:
+    20px;
+
+}
+
+
+}
