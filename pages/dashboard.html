@@ -3,464 +3,144 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dashboard | DrugFree Quest</title>
+<title>DrugFree Quest Dashboard</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/dashboard.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
+
 
 <body>
 
 
-<!-- NAVIGATION -->
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-
-<i class="fa-solid fa-shield-heart"></i>
-
-DrugFree Quest
-
-</div>
+<header class="dashboard-header">
 
 
-<ul>
-
-<li>
-<a class="active" href="#">
-Dashboard
-</a>
-</li>
+<h1>
+🤖 DrugFree Quest
+</h1>
 
 
-<li>
-<a href="academy.html">
-Academy
-</a>
-</li>
+<button class="logout-btn">
 
+Logout
 
-<li>
-<a href="missions.html">
-Missions
-</a>
-</li>
+</button>
 
-
-<li>
-<a href="achievements.html">
-Achievements
-</a>
-</li>
-
-
-<li>
-<a href="community.html">
-Community
-</a>
-</li>
-
-
-<li>
-<a href="profile.html">
-Profile
-</a>
-</li>
-
-</ul>
-
-</nav>
 
 </header>
 
 
 
 
-<!-- WELCOME SECTION -->
-
-<section class="dashboard-hero">
+<section class="orion-card">
 
 
-<div class="welcome">
+<div class="orion-image">
+
+<img 
+src="images/orion.png"
+alt="Orion Mascot"
+>
 
 
-<h1>
+</div>
 
-Welcome back,
+
+
+<div id="orionMessage">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="profile-card">
+
+
+<h2>
+
+Welcome,
+
 <span id="username">
 
-Explorer
+Player
 
 </span>
-
-🌱
-
-</h1>
-
-
-<p>
-
-Continue your journey and become a Drug-Free Champion.
-
-</p>
-
-
-<div class="xp-box">
-
-
-<h3>
-
-Level 8
-
-</h3>
-
-
-<div class="xp-bar">
-
-<div class="xp-progress">
-
-65%
-
-</div>
-
-</div>
-
-
-<p>
-
-2450 / 3500 XP
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="orion-box">
-
-
-<img src="../assets/images/orion/orion-happy.png"
-     alt="Orion">
-
-
-<div>
-
-
-<h3>
-
-Orion
-
-</h3>
-
-
-<p>
-
-"You're doing amazing! Keep growing."
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- QUICK STATS -->
-
-<section class="stats">
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-star"></i>
-
-
-<h3>
-
-XP Earned
-
-</h3>
-
-
-<h1>
-
-2450
-
-</h1>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-fire"></i>
-
-
-<h3>
-
-Current Streak
-
-</h3>
-
-
-<h1>
-
-15 Days
-
-</h1>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-medal"></i>
-
-
-<h3>
-
-Badges
-
-</h3>
-
-
-<h1>
-
-18
-
-</h1>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-
-<i class="fa-solid fa-book-open"></i>
-
-
-<h3>
-
-Lessons
-
-</h3>
-
-
-<h1>
-
-32
-
-</h1>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- DAILY MISSION -->
-
-<section class="daily-mission">
-
-
-<h2>
-
-Today's Mission 🎯
 
 </h2>
 
 
-<div class="mission-card">
+
+<div class="stats">
 
 
-<div>
+<div class="stat-box">
 
+<h3>⭐ XP</h3>
 
-<h3>
+<p id="xp">
 
-Complete Healthy Choices Lesson
-
-</h3>
-
-
-<p>
-
-Reward:
-
-<strong>
-
-+100 XP
-
-</strong>
+0
 
 </p>
-
-
-</div>
-
-
-<button>
-
-Start
-
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- LEARNING PROGRESS -->
-
-<section class="learning-progress">
-
-
-<h2>
-
-Learning Journey
-
-</h2>
-
-
-<div class="path">
-
-
-<div class="step completed">
-
-
-<span>
-
-✓
-
-</span>
-
-
-<h3>
-
-Foundation
-
-</h3>
-
-
-<p>
-
-Completed
-
-</p>
-
 
 </div>
 
 
 
+<div class="stat-box">
 
+<h3>🏆 Level</h3>
 
-<div class="step active">
+<p id="level">
 
-
-<span>
-
-2
-
-</span>
-
-
-<h3>
-
-Life Skills
-
-</h3>
-
-
-<p>
-
-In Progress
+1
 
 </p>
-
 
 </div>
 
 
 
+<div class="stat-box">
 
+<h3>🔥 Streak</h3>
 
-<div class="step locked">
+<p id="streak">
 
-
-<span>
-
-🔒
-
-</span>
-
-
-<h3>
-
-Leadership
-
-</h3>
-
-
-<p>
-
-Locked
+0
 
 </p>
 
+</div>
+
+
+
+<div class="stat-box">
+
+<h3>🏅 Badges</h3>
+
+<p id="badges">
+
+0
+
+</p>
 
 </div>
 
@@ -476,145 +156,55 @@ Locked
 
 
 
-<!-- RECENT ACTIVITY -->
 
-<section class="activity">
-
-
-<h2>
-
-Recent Activity
-
-</h2>
-
-
-<div class="activity-list">
-
-
-<div class="activity-card">
-
-<i class="fa-solid fa-circle-check"></i>
-
-<p>
-
-Completed "Understanding Choices"
-
-</p>
-
-<span>
-
-+50 XP
-
-</span>
-
-</div>
-
-
-
-<div class="activity-card">
-
-<i class="fa-solid fa-medal"></i>
-
-<p>
-
-Unlocked Knowledge Builder Badge
-
-</p>
-
-<span>
-
-Achievement
-
-</span>
-
-</div>
-
-
-
-
-<div class="activity-card">
-
-<i class="fa-solid fa-fire"></i>
-
-<p>
-
-Maintained 15-day streak
-
-</p>
-
-<span>
-
-🔥
-
-</span>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- QUICK ACTIONS -->
-
-
-<section class="quick-actions">
-
-
-<h2>
-
-Quick Actions
-
-</h2>
-
-
-<div class="action-grid">
+<section class="dashboard-menu">
 
 
 <a href="academy.html">
 
-<i class="fa-solid fa-book"></i>
-
-Learn
+📚 Academy
 
 </a>
+
 
 
 <a href="missions.html">
 
-<i class="fa-solid fa-bullseye"></i>
-
-Missions
+🎯 Missions
 
 </a>
 
 
-<a href="achievements.html">
 
-<i class="fa-solid fa-trophy"></i>
+<a href="quizzes.html">
 
-Rewards
+🧠 Quizzes
 
 </a>
+
+
+
+<a href="leaderboard.html">
+
+🏆 Leaderboard
+
+</a>
+
 
 
 <a href="community.html">
 
-<i class="fa-solid fa-users"></i>
-
-Community
+🤝 Community
 
 </a>
 
 
-</div>
+
+<a href="profile.html">
+
+👤 Profile
+
+</a>
 
 
 </section>
@@ -625,39 +215,34 @@ Community
 
 
 
-<!-- ORION MESSAGE -->
-
-<section class="orion-message">
-
-
-<div class="orion-card">
-
-
-<img src="../assets/images/orion/orion-celebrate.png"
-     alt="Orion">
-
-
-<div>
+<section class="progress-card">
 
 
 <h2>
 
-Orion's Challenge
+Your Journey
 
 </h2>
 
 
-<p>
+<div class="progress-bar">
 
-Complete one lesson today and keep your streak alive!
+
+<div 
+id="progressFill"
+class="progress-fill">
+
+</div>
+
+
+</div>
+
+
+<p id="progressText">
+
+0% Complete
 
 </p>
-
-
-</div>
-
-
-</div>
 
 
 </section>
@@ -668,21 +253,151 @@ Complete one lesson today and keep your streak alive!
 
 
 
-<footer>
 
-<p>
+<script src="js/database/firebase-config.js"></script>
 
-© 2026 DrugFree Quest
+<script src="js/database/database.js"></script>
 
-</p>
-
-</footer>
+<script src="js/database/users.js"></script>
 
 
+<script src="js/game/xp-system.js"></script>
+
+<script src="js/game/badges.js"></script>
+
+<script src="js/game/streaks.js"></script>
+
+
+<script src="js/mascot/orion.js"></script>
+
+
+<script src="js/auth/logout.js"></script>
+
+
+<script src="js/app.js"></script>
 
 
 
-<script src="../js/app.js"></script>
+
+
+<script>
+
+
+async function loadDashboard(){
+
+
+
+if(window.App.mode === "guest"){
+
+document.getElementById("username").innerHTML =
+"Guest";
+
+return;
+
+}
+
+
+
+const profile =
+await DB.getUserProfile();
+
+
+
+if(!profile)
+return;
+
+
+
+document.getElementById("username").innerHTML =
+profile.username;
+
+
+
+document.getElementById("xp").innerHTML =
+profile.xp || 0;
+
+
+
+document.getElementById("level").innerHTML =
+profile.level || 1;
+
+
+
+document.getElementById("streak").innerHTML =
+profile.streak || 0;
+
+
+
+document.getElementById("badges").innerHTML =
+(profile.badges || []).length;
+
+
+
+let progress =
+0;
+
+
+
+if(profile.completedLessons){
+
+progress += profile.completedLessons.length * 10;
+
+}
+
+
+if(profile.completedQuizzes){
+
+progress += profile.completedQuizzes.length * 10;
+
+}
+
+
+if(progress > 100)
+progress = 100;
+
+
+
+document.getElementById(
+"progressFill"
+)
+.style.width =
+progress + "%";
+
+
+
+document.getElementById(
+"progressText"
+)
+.innerHTML =
+progress + "% Complete";
+
+
+
+}
+
+
+
+document.addEventListener(
+
+"DOMContentLoaded",
+
+()=>{
+
+
+setTimeout(
+
+loadDashboard,
+
+1000
+
+);
+
+
+});
+
+
+</script>
+
 
 
 </body>
